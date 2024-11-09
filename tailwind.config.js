@@ -30,6 +30,11 @@ module.exports = {
       rotate: {
         'y-180': 'rotateY(180deg)',
       },
+      fontSize: {
+        'md-lg': '1.05rem', // custom size between base (1rem) and lg (1.125rem)
+      },
+      
+      
     },
   },
   plugins: [],

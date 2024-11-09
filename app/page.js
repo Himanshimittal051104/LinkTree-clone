@@ -7,9 +7,32 @@ import Celebrities from "@/components/Celebrities";
 import Link from "next/link";
 import Questions from "@/components/Questions";
 import About from "@/components/About";
+import Shopavery from "@/components/Shopavery";
+import PersonalityCarousel from "@/components/PersonalityCarousel";
+import CelebrityCarousel from "@/components/CelebrityCarousel";
 const graphik = localFont({
   src: "./fonts/GraphikBold.otf",
   variable: "--font-graphik",
+  weight: "100 900",
+});
+const montserrat = localFont({
+  src: "./fonts/Montserrat-SemiBold.ttf",
+  variable: "--font-montserrat",
+  weight: "100 900",
+});
+const poppins = localFont({
+  src: "./fonts/Poppins-Bold.ttf",
+  variable: "--font-poppins",
+  weight: "100 900",
+});
+const ptserif = localFont({
+  src: "./fonts/PTSerif-Bold.ttf",
+  variable: "--font-ptserif",
+  weight: "100 900",
+});
+const oswald = localFont({
+  src: "./fonts/Oswald-Bold.ttf",
+  variable: "--font-oswald",
   weight: "100 900",
 });
 export default function Home() {
@@ -57,15 +80,15 @@ export default function Home() {
           <button className="bg-bg13 rounded-full w-[30%] py-4 text-lg text-white">Get started for free</button>
         </div>
       </div>
-      <div className="bg-bg3 grid grid-cols-2 px-24 py-40">
-        <div className="flex flex-col gap-8 justify-start">
+      <div className="bg-bg3 grid grid-cols-2 py-40 px-24">
+        <div className="flex flex-col gap-8 justify-start ">
           <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Share your Linktree from your Instagram, TikTok, Twitter and other bios</p>
           <p className="text-bg12 font-semibold">Add your unique Linktree URL to all the platforms and places you find your audience. Then use your QR code to drive your offline traffic online.</p>
           <button className="bg-bg12 rounded-full w-[30%] py-4 text-lg text-customDark font-semibold">Get started for free</button>
         </div>
-        <div ></div>
+        <div><Shopavery /></div>
       </div>
-      <div className="bg-customLight  py-40">
+      <div className="bg-customLight  py-28">
         <div className="grid grid-cols-2 px-24">
           <div className=" flex items-center justify-center">
             <div className="w-[60%] h-[40vh]">
@@ -78,13 +101,13 @@ export default function Home() {
             <button className="bg-bg12 rounded-full w-[30%] py-4 text-lg">Get started for free</button>
           </div>
         </div>
-        <div className="pt-40  text-center px-24">
+        <div className="pt-28  text-center px-24">
           <p className="text-6xl font-bold text-customDark">The only link in bio trusted by 50M+</p>
           <p className="text-6xl font-bold text-blue-600 mt-3">{field[currentFieldIndex]}</p>
         </div>
-        {/* <div className="py-40 overflow-x-hidden w-[100vw]">
-          <Celebrities />
-        </div> */}
+        <div className="py-28 overflow-x-hidden w-[100vw]">
+          <CelebrityCarousel />
+        </div>
         <div className="grid grid-cols-2 h-[130vh] gap-4 px-24">
           <div className="flex flex-col gap-4">
             <div className="bg-bg12 rounded-3xl h-[50%] pt-28 pb-12">
@@ -103,38 +126,38 @@ export default function Home() {
               <a href='' className="text-bg12 font-bold text-3xl underline">Grow,own and engage your audience by unifying them in one place.</a></div>
           </div>
         </div>
-        <div className="py-40 w-[90%] mx-auto text-center px-24">
+        <div className="pt-28 pb-24 w-[90%] mx-auto text-center px-24">
           <p className="text-6xl font-bold  ">The fast, friendly and powerful link in bio tool.</p>
           <p className=" text-customDark bg-bg12 rounded-full mt-12 font-medium py-4 w-[15%] mx-auto ">Explore all plans</p>
+        </div>
+        <div className="grid grid-cols-3 pb-28 px-24 gap-6">
+          <div className="bg-white rounded-2xl h-[60vh]">
+            <div className="h-[80%]"></div>
+            <p className="px-8 text-md-lg font-semibold text-center">Seamlessly connect your Linktree with the tools you already use.</p>
+          </div>
+          <div className="bg-white rounded-2xl h-[60vh]">
+            <div className="h-[80%]"></div>
+            <p className="px-8 text-md-lg font-semibold text-center">Customize your Linktree to match your brand. Make it feel like you.</p>
+          </div>
+          <div className="bg-white rounded-2xl h-[60vh]">
+            <div className="h-[80%]"></div>
+            <p className="px-8 text-md-lg font-semibold text-center">Manage, update and schedule content with our quick, easy editor.</p>
+          </div>
         </div>
         <div className="px-24">
           <div className=" font-bold text-6xl text-center">As featured in...</div>
           <div className=" mx-auto mt-12 grid grid-cols-4 gap-4">
-            <div className="bg-white rounded-3xl py-7 text-center">INSIDER</div>
-            <div className="bg-white rounded-3xl py-7 text-center">INSIDER</div>
-            <div className="bg-white rounded-3xl py-7 text-center">INSIDER</div>
-            <div className="bg-white rounded-3xl py-7 text-center">INSIDER</div>
+            <div className="bg-white rounded-3xl py-7 flex items-center justify-center"><Image src="/tc.png" alt="tc" width="130" height="130" ></Image></div>
+            <div className={`bg-white rounded-3xl py-7 text-center text-gray-600 font-bold text-lg ${montserrat.className} large-spacing`}>INSIDER</div>
+            <div className={`bg-white rounded-3xl py-7 text-center text-gray-600 font-bold text-lg ${poppins.className} small-spacing`}>Mashable</div>
+            <div className={`bg-white rounded-3xl py-7 text-center text-gray-600 font-bold text-lg ${oswald.className}`}>FORTUNE</div>
           </div>
-          <div className="bg-white rounded-3xl py-7 text-center mt-4 w-[25%] mx-auto">INSIDER</div>
+          <div className={`bg-white rounded-3xl py-7 text-center mt-4 w-[25%] mx-auto text-gray-600 font-bold text-xl ${ptserif.className} small-spacing`}>Forbes</div>
         </div>
-        <div className="rounded-full mt-28 px-24 h-[50vh] w-[60%] mx-auto bg-black relative">
-          {/* <Image src='' alt='' fill className="object-cover rounded-full"></Image> */}
-          <div>
-            <p></p>
-            <p></p>
-            <div></div>
-          </div>
-        </div>
+        <PersonalityCarousel/>
       </div>
-      
-      {/* <div className="bg-black w-full h-[80vh] flex items-center justify-center group " >
-        <div className="bg-pink-200 w-[40%] h-[40%] relative group-hover:rotate-y-180 duration-500 transition-transform " style={{ transformStyle: "preserve-3d" ,perspective:"1000px"}}>
-          <div className="bg-red-400 w-full h-full absolute " style={{ backfaceVisibility: 'hidden',transform:"rotateY(0deg)" }}>hello</div>
-          <div className="bg-yellow-900 w-full h-full absolute " style={{ backfaceVisibility: 'hidden',transform: 'rotateY(180deg)' }}>yello</div>
-        </div>
-      </div> */}
-      <Questions/>
-      <About/>
+      <Questions />
+      <About />
     </>
   );
 }

@@ -50,3 +50,13 @@ z-index: 1100;
 .animate-scroll {
   animation: scrollWithPause 10s linear infinite;
 } */
+
+.large-spacing {
+  /* font-size: 24px; */
+  letter-spacing: 4px; /* Adds 4px space between each letter */
+}
+
+.small-spacing {
+  /* font-size: 24px; */
+  letter-spacing: 0px; /* Adds 4px space between each letter */
+}
