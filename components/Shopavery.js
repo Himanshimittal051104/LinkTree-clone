@@ -23,7 +23,7 @@ const Shopavery = () => {
                 <div className='text-center text-customSapphire font-semibold mt-2'>$ 20</div>
             </div>
             <div className=' rounded-2xl w-[9vw] h-[17vh]  p-3 absolute top-48 left-24' style={{ backgroundImage: `url('/shopInsta.jpg')`, backgroundPosition: 'center' }}><div><Image src="/instagram.svg" alt="instagram" width="30" height="30"></Image></div></div>
-            <div className=' rounded-2xl w-[8vw] bg-sky-500 h-[20vh] p-3 absolute bottom-5 left-60 ml-1'>
+            <div className=' rounded-2xl w-[8vw] bg-sky-500 h-[20vh] p-3 absolute bottom-0 left-60 ml-1'>
                 <div className='mb-5'><Image src="/twitter.svg" alt="twitter" width="30" height="30"></Image></div>
                 <div className='flex flex-col gap-1'>
                     <div className='rounded-full h-2.5 w-full bg-sky-300'></div>
@@ -31,7 +31,7 @@ const Shopavery = () => {
                     <div className='rounded-full h-2.5 w-[50%] bg-sky-300'></div>
                 </div>
             </div>
-            <div className=' rounded-2xl w-[9vw] h-[17vh]  p-2 py-1 absolute bottom-20 right-36' style={{ backgroundImage: `url('/book.jpg')`, backgroundPosition: 'center' }}><div className='bg-white h-8 w-8 rounded-full mt-20 flex items-center justify-center'><Image src="/shopPlay.svg" alt="play" width="30" height="30"></Image></div></div>
+            <div className=' rounded-2xl w-[9vw] h-[17vh]  p-2 py-1 absolute bottom-10 right-36' style={{ backgroundImage: `url('/book.jpg')`, backgroundPosition: 'center' }}><div className='bg-white h-8 w-8 rounded-full mt-20 flex items-center justify-center'><Image src="/shopPlay.svg" alt="play" width="30" height="30"></Image></div></div>
         </div>
     )
 }

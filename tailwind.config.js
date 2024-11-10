@@ -26,6 +26,11 @@ module.exports = {
         customMustardYellow:"#AC7E04",
         customNeon:"#E0E722",
         customSapphire:"rgb(6,20,146)",
+        customGreen:"#95BF47",
+        customOrange:"#FF4A00",
+        customCyan:'#00b4d8',
+        FallingTears:"#c0d6dd",
+        customBlack:"#100c08"
       },
       rotate: {
         'y-180': 'rotateY(180deg)',

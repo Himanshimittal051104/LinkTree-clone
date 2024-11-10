@@ -10,6 +10,10 @@ import About from "@/components/About";
 import Shopavery from "@/components/Shopavery";
 import PersonalityCarousel from "@/components/PersonalityCarousel";
 import CelebrityCarousel from "@/components/CelebrityCarousel";
+import Tools from "@/components/Tools";
+import ScheduleContent from "@/components/ScheduleContent";
+import Brand from "@/components/Brand";
+import Field from "@/components/Field";
 const graphik = localFont({
   src: "./fonts/GraphikBold.otf",
   variable: "--font-graphik",
@@ -36,23 +40,23 @@ const oswald = localFont({
   weight: "100 900",
 });
 export default function Home() {
-  const [currentFieldIndex, setCurrentFieldIndex] = useState(0);
-  const field = ["influencers", "small buisness", "athletes", "models", "monetizers", "health educators", "streamers", "vloggers", "fitness coaches", "ecommerce sellers", "retailers", "products", "wellness leaders", "musicians", "bands", "DJs", "podcasters", "fashion designer", "merch sellers", "writers", "creators"];
-  useEffect(() => {
-    if (currentFieldIndex < field.length - 1) {
-      const timer = setInterval(() => {
-        setCurrentFieldIndex((prevIndex) => prevIndex + 1);
-      }, 3000);
+  // const [currentFieldIndex, setCurrentFieldIndex] = useState(0);
+  // const field = ["influencers", "small buisness", "athletes", "models", "monetizers", "health educators", "streamers", "vloggers", "fitness coaches", "ecommerce sellers", "retailers", "products", "wellness leaders", "musicians", "bands", "DJs", "podcasters", "fashion designer", "merch sellers", "writers", "creators"];
+  // useEffect(() => {
+  //   if (currentFieldIndex < field.length - 1) {
+  //     const timer = setInterval(() => {
+  //       setCurrentFieldIndex((prevIndex) => prevIndex + 1);
+  //     }, 3000);
 
-      return () => clearInterval(timer);
-    } else {
-      const timer = setInterval(() => {
-        setCurrentFieldIndex(0);
-      }, 3000);
+  //     return () => clearInterval(timer);
+  //   } else {
+  //     const timer = setInterval(() => {
+  //       setCurrentFieldIndex(0);
+  //     }, 3000);
 
-      return () => clearInterval(timer);
-    }
-  },);
+  //     return () => clearInterval(timer);
+  //   }
+  // },);
 
   return (
     <>
@@ -64,10 +68,10 @@ export default function Home() {
             <div className="relative font-semibold flex items-center text-gray-500">
               <span className=" cursor-default absolute left-4">linktr.ee/</span>
               <input
-                type="text" placeholder="yourname" className="placeholder-gray-500 outline-none py-4 rounded-lg pl-20 focus:outline-2 focus:outline-white focus:outline-offset-4"
+                type="text" placeholder="yourname" className="placeholder-gray-500 outline-none py-3 rounded-lg pl-20 focus:outline-2 focus:outline-white focus:outline-offset-4"
               />
             </div>
-            <button className="bg-bg12 rounded-full px-5 py-4 text-lg ">Claim your Linktree</button>
+            <button className="bg-bg12 rounded-full px-4 py-3 text-lg ">Claim your Linktree</button>
           </div>
         </div>
         <div></div>
@@ -77,14 +81,14 @@ export default function Home() {
         <div className="flex flex-col gap-8 justify-start">
           <p className={`text-bg13 text-6xl font-bold ${graphik.className}`}>Create and customize your Linktree in minutes</p>
           <p className="text-bg13 font-semibold">Connect your TikTok, Instagram, Twitter, website, store, videos, music, podcast, events and more. It all comes together in a link in bio landing page designed to convert.</p>
-          <button className="bg-bg13 rounded-full w-[30%] py-4 text-lg text-white">Get started for free</button>
+          <button className="bg-bg13 rounded-full w-[30%] py-3 text-lg text-white">Get started for free</button>
         </div>
       </div>
       <div className="bg-bg3 grid grid-cols-2 py-40 px-24">
         <div className="flex flex-col gap-8 justify-start ">
           <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Share your Linktree from your Instagram, TikTok, Twitter and other bios</p>
           <p className="text-bg12 font-semibold">Add your unique Linktree URL to all the platforms and places you find your audience. Then use your QR code to drive your offline traffic online.</p>
-          <button className="bg-bg12 rounded-full w-[30%] py-4 text-lg text-customDark font-semibold">Get started for free</button>
+          <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg text-customDark font-semibold">Get started for free</button>
         </div>
         <div><Shopavery /></div>
       </div>
@@ -98,14 +102,14 @@ export default function Home() {
           <div className="flex flex-col gap-8 justify-start">
             <p className={` text-6xl font-bold ${graphik.className} text-customDark`}>Analyze your audience and keep your followers engaged</p>
             <p className=" font-semibold">Track your engagement over time, monitor revenue and learn what’s converting your audience. Make informed updates on the fly to keep them coming back.</p>
-            <button className="bg-bg12 rounded-full w-[30%] py-4 text-lg">Get started for free</button>
+            <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg">Get started for free</button>
           </div>
         </div>
         <div className="pt-28  text-center px-24">
           <p className="text-6xl font-bold text-customDark">The only link in bio trusted by 50M+</p>
-          <p className="text-6xl font-bold text-blue-600 mt-3">{field[currentFieldIndex]}</p>
+          <div className="text-6xl font-bold text-blue-600 mt-3 w-[100%] h-[70px]"><Field/></div>
         </div>
-        <div className="py-28 overflow-x-hidden w-[100vw]">
+        <div className="pt-28 pb-44">
           <CelebrityCarousel />
         </div>
         <div className="grid grid-cols-2 h-[130vh] gap-4 px-24">
@@ -128,25 +132,25 @@ export default function Home() {
         </div>
         <div className="pt-28 pb-24 w-[90%] mx-auto text-center px-24">
           <p className="text-6xl font-bold  ">The fast, friendly and powerful link in bio tool.</p>
-          <p className=" text-customDark bg-bg12 rounded-full mt-12 font-medium py-4 w-[15%] mx-auto ">Explore all plans</p>
+          <p className=" text-customDark bg-bg12 rounded-full mt-12 font-medium py-3 w-[15%] mx-auto cursor-pointer">Explore all plans</p>
         </div>
         <div className="grid grid-cols-3 pb-28 px-24 gap-6">
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%]"></div>
+            <div className="h-[80%]"><Tools/></div>
             <p className="px-8 text-md-lg font-semibold text-center">Seamlessly connect your Linktree with the tools you already use.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%]"></div>
+            <div className="h-[80%]"><Brand/></div>
             <p className="px-8 text-md-lg font-semibold text-center">Customize your Linktree to match your brand. Make it feel like you.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%]"></div>
+            <div className="h-[80%]"><ScheduleContent/></div>
             <p className="px-8 text-md-lg font-semibold text-center">Manage, update and schedule content with our quick, easy editor.</p>
           </div>
         </div>
         <div className="px-24">
           <div className=" font-bold text-6xl text-center">As featured in...</div>
-          <div className=" mx-auto mt-12 grid grid-cols-4 gap-4">
+          <div className=" mx-auto mt-12 grid grid-cols-4 gap-4 cursor-default">
             <div className="bg-white rounded-3xl py-7 flex items-center justify-center"><Image src="/tc.png" alt="tc" width="130" height="130" ></Image></div>
             <div className={`bg-white rounded-3xl py-7 text-center text-gray-600 font-bold text-lg ${montserrat.className} large-spacing`}>INSIDER</div>
             <div className={`bg-white rounded-3xl py-7 text-center text-gray-600 font-bold text-lg ${poppins.className} small-spacing`}>Mashable</div>

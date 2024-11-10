@@ -70,12 +70,12 @@ const PersonalitiesCarousel = () => {
             </Carousel>
             <div className='flex gap-2 mt-12 justify-center'>
                 <div className='rounded-lg w-12 h-12 border border-black flex items-center justify-center hover:bg-customDark relative group' onClick={() => carouselRef.current.prev()}>
-                    <Image src='/arrow-left.svg' alt='left-arrow' width="30" height={30} className='absolute opacity-100 group-hover:opacity-0'></Image>
-                    <Image src='/arrow-leftW.svg' alt='left-arrow' width="30" height={30} className='absolute opacity-0 group-hover:opacity-100'></Image>
+                    <Image src='/arrow-left.svg' alt='left-arrow' width="30" height={30} className='absolute opacity-100 group-hover:!opacity-0'></Image>
+                    <Image src='/arrow-leftW.svg' alt='left-arrow' width="30" height={30} className='absolute opacity-0 group-hover:!opacity-100'></Image>
                 </div>
                 <div className='rounded-lg w-12 h-12 border border-black flex items-center justify-center hover:bg-customDark group relative' onClick={() => carouselRef.current.next()}>
-                    <Image src='/arrow-right.svg' alt='right-arrow' width="30" height={30} className='absolute opacity-100 group-hover:opacity-0 '></Image>
-                    <Image src='/arrow-rightW.svg' alt='right-arrow' width="30" height={30} className='absolute opacity-0 group-hover:opacity-100'></Image>
+                    <Image src='/arrow-right.svg' alt='right-arrow' width="30" height={30} className='absolute opacity-100 group-hover:!opacity-0 '></Image>
+                    <Image src='/arrow-rightW.svg' alt='right-arrow' width="30" height={30} className='absolute opacity-0 group-hover:!opacity-100'></Image>
                 </div>
             </div>
         </div>

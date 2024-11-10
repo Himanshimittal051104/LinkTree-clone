@@ -60,3 +60,7 @@ z-index: 1100;
   /* font-size: 24px; */
   letter-spacing: 0px; /* Adds 4px space between each letter */
 }
+
+.roundedP{
+  border-radius: 64;
+}
