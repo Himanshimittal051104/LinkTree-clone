@@ -8,7 +8,7 @@ const Analyze = () => {
                     <div className='flip-card-inner flip-card-inner-auto'>
                         <div className='bg-bg13 rounded-2xl justify-center items-center px-3 grid grid-cols-2 py-3 w-full h-full flip-card-front '>
                             <div>
-                                <Image src="/graphC.png" alt="graphC" width="200" height="200" className='mx-auto '></Image>
+                                <Image src="/graphC.png" alt="graphC" width="350" height="350" className='mx-auto '></Image>
                             </div>
                             <div className='text-center text-bg12 flex items-center justify-center'>
                                 <ul>
@@ -21,7 +21,7 @@ const Analyze = () => {
                         </div>
                         <div className='bg-customBlue rounded-2xl w-[100%] grid grid-cols-2 justify-center items-center px-4 py-3 flip-card-back'>
                             <div className='relative'>
-                                <Image src="/globe.jpg" alt="globe" width="200" height="200" className='mx-auto mix-blend-multiply'></Image>
+                                <Image src="/globe.png" alt="globe" width="300" height="300" className='mx-auto '></Image>
                                 <div className='absolute w-3 h-3 bg-fuchsia-700 rounded-full border-2 border-white top-1/3 left-1/2'></div>
                             </div>
                             <div className='text-center text-bg11'>
@@ -81,7 +81,14 @@ const Analyze = () => {
                 <div className='flip-card w-[60%]'>
                     <div className='flip-card-inner flip-card-inner-auto'>
                         <div className='bg-bg3 rounded-2xl w-full h-full grid grid-cols-2 justify-center items-center px-3 flip-card-front'>
-                            <div ><Image src="/waves.png" alt="waves" width="100" height="100" className='mx-auto mix-blend-multiply'></Image></div>
+                            <div className='flex gap-2 justify-center items-end'>
+                                <div className='bg-white rounded-full h-10 w-2'></div>
+                                <div className='bg-white rounded-full h-16 w-2'></div>
+                                <div className='bg-white rounded-full h-20 w-2'></div>
+                                <div className='bg-white rounded-full h-16 w-2'></div>
+                                <div className='bg-white rounded-full h-20 w-2'></div>
+                                <div className='bg-white rounded-full h-12 w-2'></div>
+                            </div>
                             <div>
                                 <p className='text-white font-semibold text-center text-2xl'>432</p>
                                 <p className='text-white font-semibold text-center'>New Subscribers</p>

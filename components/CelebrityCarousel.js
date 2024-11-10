@@ -51,8 +51,8 @@ const CelebrityCarousel = () => {
                 <SwiperSlide className='w-[480px] mr-28 '>
                     <div className='w-[480px] rounded-3xl h-[55vh] roundedP flip-card group'>
                         <div className='flip-card-inner'>
-                            <div className='flip-card-front'>
-                                <Image src="/comedyCentral.png" alt="comedycentral" fill className=" roundedP"></Image>
+                            <div className='flip-card-front bg-black roundedP flex items-center justify-center'>
+                                <Image src="/comedyCentral.png" alt="comedycentral" width={300} height={300} className=" roundedP"></Image>
                             </div>
                             <div className='flip-card-back flex justify-center items-center roundedP bg-customNeon low'>
                                 <button className=' bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/comedycentral</span></button>

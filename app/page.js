@@ -14,6 +14,8 @@ import Tools from "@/components/Tools";
 import ScheduleContent from "@/components/ScheduleContent";
 import Brand from "@/components/Brand";
 import Field from "@/components/Field";
+import SellProducts from "@/components/SellProducts";
+import ShareContent from "@/components/ShareContent";
 const graphik = localFont({
   src: "./fonts/GraphikBold.otf",
   variable: "--font-graphik",
@@ -97,18 +99,18 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 h-[130vh] gap-4 px-24">
           <div className="flex flex-col gap-4">
-            <div className="bg-bg12 rounded-3xl h-[50%] pt-28 pb-12">
-              <div className="h-[60%]"></div>
-              <div className="pl-12 w-[70%]"><a href='' className="underline text-bg13 font-bold text-3xl">Share your content in limitless ways on your linktree.</a></div>
+            <div className="bg-bg12 rounded-3xl h-[50%] pb-20">
+              <div className="h-[90%] rounded-3xl "><ShareContent/></div>
+              <div className="pl-12 w-[80%]"><a href='' className="underline text-bg13 font-bold text-3xl">Share your content in limitless ways on your linktree.</a></div>
             </div>
-            <div className="bg-bg11 rounded-3xl h-[50%] pt-28 pb-12">
-              <div className="h-[60%]"></div>
+            <div className="bg-bg11 rounded-3xl h-[50%] pb-20">
+              <div className="h-[80%] rounded-3xl flex items-center justify-center"><SellProducts/></div>
               <div className="pl-12 w-[70%]">
                 <a href='' className="text-customDark font-bold text-3xl underline">{`Sell products and collect payments.It's monetization made simple.`}</a></div>
             </div>
           </div>
-          <div className="bg-red-900 rounded-3xl pt-28 pb-12">
-            <div className="h-[85%]"></div>
+          <div className="bg-red-900 rounded-3xl pb-20">
+            <div className="h-[90%] rounded-3xl "></div>
             <div className="pl-12 w-[70%]">
               <a href='' className="text-bg12 font-bold text-3xl underline">Grow,own and engage your audience by unifying them in one place.</a></div>
           </div>
