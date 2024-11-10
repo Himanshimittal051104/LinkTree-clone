@@ -3,7 +3,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { useState, useEffect } from "react";
 import Analyze from "@/components/Analyze";
-import Celebrities from "@/components/Celebrities";
+import Testing from "@/components/Testing";
 import Link from "next/link";
 import Questions from "@/components/Questions";
 import About from "@/components/About";
@@ -162,6 +162,10 @@ export default function Home() {
       </div>
       <Questions />
       <About />
+      <div className="bg-white h-[100vh] w-[100vw] flex justify-center items-center">
+      <Testing/>
+      </div>
+      
     </>
   );
 }

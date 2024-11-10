@@ -30,7 +30,7 @@ module.exports = {
         customOrange:"#FF4A00",
         customCyan:'#00b4d8',
         FallingTears:"#c0d6dd",
-        customBlack:"#100c08"
+        customBlack:"#0f0f0f"
       },
       rotate: {
         'y-180': 'rotateY(180deg)',
