@@ -40,24 +40,7 @@ const oswald = localFont({
   weight: "100 900",
 });
 export default function Home() {
-  // const [currentFieldIndex, setCurrentFieldIndex] = useState(0);
-  // const field = ["influencers", "small buisness", "athletes", "models", "monetizers", "health educators", "streamers", "vloggers", "fitness coaches", "ecommerce sellers", "retailers", "products", "wellness leaders", "musicians", "bands", "DJs", "podcasters", "fashion designer", "merch sellers", "writers", "creators"];
-  // useEffect(() => {
-  //   if (currentFieldIndex < field.length - 1) {
-  //     const timer = setInterval(() => {
-  //       setCurrentFieldIndex((prevIndex) => prevIndex + 1);
-  //     }, 3000);
-
-  //     return () => clearInterval(timer);
-  //   } else {
-  //     const timer = setInterval(() => {
-  //       setCurrentFieldIndex(0);
-  //     }, 3000);
-
-  //     return () => clearInterval(timer);
-  //   }
-  // },);
-
+  
   return (
     <>
       <div className="bg-bg1 grid grid-cols-2 px-24 py-40">
@@ -95,7 +78,7 @@ export default function Home() {
       <div className="bg-customLight  py-28">
         <div className="grid grid-cols-2 px-24">
           <div className=" flex items-center justify-center">
-            <div className="w-[60%] h-[40vh]">
+            <div className="w-[100%] h-[60vh] flex items-center justify-center">
               <Analyze />
             </div>
           </div>
@@ -162,10 +145,6 @@ export default function Home() {
       </div>
       <Questions />
       <About />
-      <div className="bg-white h-[100vh] w-[100vw] flex justify-center items-center">
-      <Testing/>
-      </div>
-      
     </>
   );
 }

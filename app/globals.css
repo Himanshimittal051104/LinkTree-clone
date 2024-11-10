@@ -75,7 +75,7 @@ z-index: 1100;
   /* backface-visibility: hidden; */
   transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner {
+.group:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 .flip-card-front, .flip-card-back {
@@ -90,4 +90,20 @@ z-index: 1100;
 .flip-card-back {
   transform: rotateY(180deg);
   /* transform-origin:right; */
+}
+
+/* .flip-card-inner-auto {
+  animation: flip 2s ease-in-out infinite; 
+} */
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg); /* Initial state */
+  }
+  50% {
+    transform: rotateY(180deg); /* Flip after 50% of the time */
+  }
+  100% {
+    transform: rotateY(0deg); /* Return to the original state */
+  }
 }
