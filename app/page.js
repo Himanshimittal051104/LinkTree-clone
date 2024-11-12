@@ -3,7 +3,6 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { useState, useEffect } from "react";
 import Analyze from "@/components/Analyze";
-import Testing from "@/components/Testing";
 import Link from "next/link";
 import Questions from "@/components/Questions";
 import About from "@/components/About";
@@ -16,6 +15,8 @@ import Brand from "@/components/Brand";
 import Field from "@/components/Field";
 import SellProducts from "@/components/SellProducts";
 import ShareContent from "@/components/ShareContent";
+import Engage from "@/components/Engage";
+import Testing from "@/components/Testing";
 const graphik = localFont({
   src: "./fonts/GraphikBold.otf",
   variable: "--font-graphik",
@@ -100,7 +101,7 @@ export default function Home() {
         <div className="grid grid-cols-2 h-[130vh] gap-4 px-24">
           <div className="flex flex-col gap-4">
             <div className="bg-bg12 rounded-3xl h-[50%] pb-20">
-              <div className="h-[90%] rounded-3xl "><ShareContent/></div>
+              <div className="h-[90%] rounded-3xl flex items-center justify-center"><ShareContent/></div>
               <div className="pl-12 w-[80%]"><a href='' className="underline text-bg13 font-bold text-3xl">Share your content in limitless ways on your linktree.</a></div>
             </div>
             <div className="bg-bg11 rounded-3xl h-[50%] pb-20">
@@ -110,7 +111,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-red-900 rounded-3xl pb-20">
-            <div className="h-[90%] rounded-3xl "></div>
+            <div className="h-[90%] rounded-3xl flex items-center justify-center py-24"><Engage/></div>
             <div className="pl-12 w-[70%]">
               <a href='' className="text-bg12 font-bold text-3xl underline">Grow,own and engage your audience by unifying them in one place.</a></div>
           </div>
@@ -125,7 +126,7 @@ export default function Home() {
             <p className="px-8 text-md-lg font-semibold text-center">Seamlessly connect your Linktree with the tools you already use.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%]"><Brand/></div>
+            <div className="h-[80%] flex items-center justify-center"><Brand/></div>
             <p className="px-8 text-md-lg font-semibold text-center">Customize your Linktree to match your brand. Make it feel like you.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">
@@ -147,6 +148,8 @@ export default function Home() {
       </div>
       <Questions />
       <About />
+      <div>
+      <Testing/></div>
     </>
   );
 }

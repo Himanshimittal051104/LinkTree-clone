@@ -4,11 +4,11 @@ const Analyze = () => {
     return (
         <div className=' h-[70%] w-[60%] grid grid-rows-2 gap-3'>
             <div className='gap-3 w-[100%] flex'>
-                <div className='flip-card rounded-2xl w-[60%]'>
-                    <div className='flip-card-inner flip-card-inner-auto'>
+                <div className='flip-card rounded-2xl w-[60%]'> 
+                    <div className='flip-card-inner flip-card-inner-auto1'>
                         <div className='bg-bg13 rounded-2xl justify-center items-center px-3 grid grid-cols-2 py-3 w-full h-full flip-card-front '>
                             <div>
-                                <Image src="/graphC.png" alt="graphC" width="350" height="350" className='mx-auto '></Image>
+                                <Image src="/graphC.png" alt="graphC" width="100" height="100" className='mx-auto '></Image>
                             </div>
                             <div className='text-center text-bg12 flex items-center justify-center'>
                                 <ul>
@@ -33,7 +33,7 @@ const Analyze = () => {
                     </div>
                 </div>
                 <div className='flip-card rounded-2xl w-[35%]'>
-                    <div className='flip-card-inner flip-card-inner-auto'>
+                    <div className='flip-card-inner flip-card-inner-auto3'>
                         <div className='flip-card-front'>
                             <div className='bg-customGrey rounded-2xl flex justify-center items-center h-full'>
                                 <ul>
@@ -57,7 +57,7 @@ const Analyze = () => {
             </div>
             <div className='flex gap-3'>
                 <div className='flip-card w-[35%] h-full'>
-                    <div className='flip-card-inner flip-card-inner-auto'>
+                    <div className='flip-card-inner flip-card-inner-auto4'>
                         <div className='flip-card-front'>
                             <div className='bg-yellow-500 rounded-2xl w-[100%] h-full flex justify-center items-center'>
                                 <ul>
@@ -79,7 +79,7 @@ const Analyze = () => {
                     </div>
                 </div>
                 <div className='flip-card w-[60%]'>
-                    <div className='flip-card-inner flip-card-inner-auto'>
+                    <div className='flip-card-inner flip-card-inner-auto2'>
                         <div className='bg-bg3 rounded-2xl w-full h-full grid grid-cols-2 justify-center items-center px-3 flip-card-front'>
                             <div className='flex gap-2 justify-center items-end'>
                                 <div className='bg-white rounded-full h-10 w-2'></div>

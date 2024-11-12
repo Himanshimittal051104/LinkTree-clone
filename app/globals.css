@@ -9,8 +9,6 @@
 .low {
   z-index: 900;
 }
-
-
 .large-spacing {
   letter-spacing: 4px;
 }
@@ -32,9 +30,9 @@
   width: 100%;
   height: 100%;
   transition: transform 0.4s;
-  /* backface-visibility: hidden; */
   transform-style: preserve-3d;
 }
+
 
 .group:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -53,33 +51,69 @@
   /* transform-origin:right; */
 }
 
-.flip-card-inner-auto {
-  animation: flipCard 7s infinite linear;
-  /* transition: transform 0.4s ease; */
+.flippedEngage {
+  transform: rotateY(180deg);
 }
 
-@keyframes flipCard {
-
-  /* 0%,50% {
+/* 
+@keyframes flipEngage {
+  from {
     transform: rotateY(0deg);
-    transition: transform 0.1s ease;
   }
-
-  50%,100% {
+  to {
     transform: rotateY(180deg);
-    transition: transform 0.1s ease;
-  } */
-  0%, 42.86% {
-    transform: rotateY(0deg); /* Show front side */
   }
-  50%,92.85%{
-    transform: rotateY(180deg); /* Flip to back */
+} */
+
+/* .flip-card-inner-auto1 {
+  animation: flipCard1 10s infinite linear;
+}
+.flip-card-inner-auto2 {
+  animation: flipCard2 12s infinite linear;
+}
+.flip-card-inner-auto3 {
+  animation: flipCard3 14s infinite linear;
+}
+.flip-card-inner-auto4 {
+  animation: flipCard4 16s infinite linear;
+} */
+
+/* @keyframes flipCard1 {
+  0%, 30% {
+    transform: rotateY(0deg); 
+  }
+  35%,95%{
+    transform: rotateY(180deg);
+}
+}
+@keyframes flipCard2 {
+  0%, 30% {
+    transform: rotateY(0deg); 
+  }
+  37.5%,95.83%{
+    transform: rotateY(180deg); 
   }
 }
+@keyframes flipCard3 {
+  0%, 35.71% {
+    transform: rotateY(0deg); 
+  }
+  39.28%,96.42%{
+    transform: rotateY(180deg);
+  }
+}
+@keyframes flipCard4 {
+  0%, 37.5% {
+    transform: rotateY(0deg); 
+  }
+  40.62%,96.87%{
+    transform: rotateY(180deg);
+  }
+} */
 
 
 .rotate {
-  transform: skewY(-10deg);
+  transform: skewY(-10deg); 
   /* perspective: 100px; */
 }
 
@@ -108,4 +142,53 @@
 .rotate:hover:nth-child(4)~.rotate:nth-child(n+5) {
   transform: translateX(15px) skewY(-10deg);
   transition: transform 0.3s ease;
+}
+
+.flip-card2{
+  position: relative;
+  width: 13vw;
+  height: 20vh;
+  perspective: 1000px; 
+}
+.flip-card-inner2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  transition: transform 0.5s; 
+  transform-origin: center;
+}
+.flip-card-face1{
+  transform: rotateY(0deg);
+} 
+.flip-card-face2{ 
+  transform: rotateY(90deg);
+}
+/* .flip-card-face3{
+  transform: rotateY(180deg);
+}
+.flip-card-face4{
+  transform: rotateY(-90deg);
+} */
+.flip-card-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+/* .face1 .flip-card-inner{
+  transform: rotateY(0deg);
+}
+.face2 .flip-card-inner{
+  transform: rotateY(180deg);
+}  */
+/* .face3 .face3 .flip-card-inner{
+  transform: rotateY(180deg);
+}
+.face4 .face4 .flip-card-inner{
+  transform: rotateY(-90deg); 
+}  */
+
+.group:hover .flip-card-inner2 {
+  transform: rotateY(90deg);
 }

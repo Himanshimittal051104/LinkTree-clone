@@ -32,11 +32,11 @@ const Shopavery = () => {
             
             <div className=' rounded-2xl w-[9vw] h-[17vh]  p-3 absolute top-48 left-24' >
                 <Image src="/music.jpg" alt="music" fill className='rounded-2xl'></Image>
-                <Image src="/instagram.svg" alt="instagram" width="30" height="30" className='absolute -mt-2 -ml-2'></Image>
+                <Image src="/instagram.png" alt="instagram" width="30" height="30" className='absolute -mt-2 -ml-2'></Image>
             </div>
 
             <div className=' rounded-2xl w-[8vw] bg-sky-500 h-[20vh] p-3 absolute bottom-0 left-60 ml-1'>
-                <div className='mb-3'><Image src="/twitter.svg" alt="twitter" width="30" height="30"></Image></div>
+                <div className='mb-3'><Image src="/twitter.png" alt="twitter" width="30" height="30"></Image></div>
                 <div className='flex flex-col gap-1'>
                     <div className='rounded-full h-2.5 w-full bg-sky-300'></div>
                     <div className='rounded-full h-2.5 w-full bg-sky-300'></div>

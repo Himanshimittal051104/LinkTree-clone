@@ -12,7 +12,8 @@ const Navbar = () => {
   return (
     <nav className='h-20 mt-12 mx-20 rounded-full flex justify-between pr-5 pl-10 items-center navbar sticky bg-white top-12' >
       <div className='flex gap-14 items-center'>
-        <div className={`font-bold text-3xl flex ${dosis.className} cursor-pointer`}>Linktree<Image src="tree.svg" alt="tree" width="30" height="30"></Image></div>
+        <Link href="">
+          <div className={`font-bold text-3xl flex ${dosis.className} cursor-pointer`}>Linktree<Image src="tree.svg" alt="tree" width="30" height="30"></Image></div></Link>
         <ul className='flex gap-2 text-textcolor font-semibold'>
           <Link href="" className='text-gray-500 no-underline'><li className='cursor-pointer hover:bg-customLight px-3 py-2 hover:!rounded-lg'>Templates</li></Link>
           <Link href="" className='text-gray-500 no-underline'><li className='hover:cursor-pointer hover:bg-customLight px-3 py-2 hover:rounded-lg'>Marketplace</li></Link>
@@ -47,8 +48,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='flex gap-2 justify-center items-center'>
-        <Link href=""><button className='bg-customLight rounded-lg px-7 font-semibold text-lg hover:cursor-pointer py-3'>Log in</button></Link>
-        <Link href=""><button className='bg-customDark text-lg text-white font-semibold rounded-full px-7 py-3 hover:cursor-pointer'>Sign up free</button></Link>
+        <Link href="/Login"><button className='bg-customLight rounded-lg px-7 font-semibold text-lg hover:cursor-pointer py-3'>Log in</button></Link>
+        <Link href="/Signup"><button className='bg-customDark text-lg text-white font-semibold rounded-full px-7 py-3 hover:cursor-pointer'>Sign up free</button></Link>
       </div>
     </nav>
   )
