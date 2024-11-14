@@ -1,7 +1,8 @@
+// "use client"
 import localFont from "next/font/local";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
-
+// import { usePathname } from 'next/navigation';
 import Navbar from "@/components/Navbar";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,12 +21,23 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // const pathname = usePathname();
+
+  // const backgroundColors = {
+  //   '/': 'bg-bg1',
+  //   '/about': 'bg-blue-100',
+  //   '/contact': 'bg-green-100',
+  // };
+  // const pageBgClass = backgroundColors[pathname] || 'bg-white';
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-bg1`}
       >
-        {/* <Navbar /> */}
+         {/* <div className={`${pageBgClass}`}>
+          <Navbar />
+          {children}
+        </div> */}
         {children}
       </body>
     </html>

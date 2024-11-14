@@ -31,7 +31,7 @@ const page = () => {
         <div>
             <div className="bg-customSapphire grid grid-cols-2 gap-8 px-24 pt-60 pb-24 ">
                 <div className="flex flex-col gap-8 justify-center ">
-                    <p className={`text-white text-6xl font-bold ${graphik.className}`}>Get more TikTok followers</p>
+                    <p className={`text-white text-7xl font-bold ${graphik.className}`}>Get more TikTok followers</p>
                     <p className="text-white font-semibold text-md-lg">Showcase your TikTok profile and the videos you love most and give your Linktree visitors an easy way to follow you for more.</p>
                     <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free</button>
                 </div>
@@ -44,7 +44,7 @@ const page = () => {
                     <Image src="/LinkLinkedlin.avif" alt="twitterPage" fill className='-mt-40'></Image>
                 </div>
                 <div className="flex flex-col gap-8">
-                    <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Put your best content forward</p>
+                    <p className={`text-bg12 text-7xl font-bold ${graphik.className}`}>Put your best content forward</p>
                     <p className="text-bg12 font-semibold text-lg">Curate a blend of six videos that will turn your Linktree visitors into TikTok followers. All it takes is a few clicks.</p>
                     <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[40%] font-semibold">Add a Tiktok Profile Link</button>
                 </div>

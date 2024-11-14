@@ -1,15 +1,19 @@
+
 import React from 'react'
 import Image from 'next/image'
 import localFont from "next/font/local";
 import Link from 'next/link';
+
 const dosis = localFont({
   src: "../app/fonts/Dosis-Bold.ttf",
   variable: "--font-dosis",
   weight: "100 900",
 });
+
 const Navbar = () => {
 
   return (
+    
     <nav className='h-20 mt-12 mx-20 rounded-full flex justify-between pr-5 pl-10 items-center navbar sticky bg-white top-12' >
       <div className='flex gap-14 items-center'>
         <Link href="">

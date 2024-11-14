@@ -148,8 +148,6 @@ export default function Home() {
       </div>
       <Questions />
       <About />
-      <div>
-      <Testing/></div>
     </>
   );
 }

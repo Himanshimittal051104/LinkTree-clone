@@ -50,7 +50,7 @@ const page = () => {
               <div className=' w-full h-60 flex items-center justify-center relative'><Image src="/moreclicks.png" alt="moreclicks" fill className=''></Image></div>
               <div className={`text-3xl my-8 font-semibold ${graphikSemiBold.className}`}>More clicks</div>
               <p className={`${graphikMedium.className} text-md-lg `}>Get more clicks on your content—from blog posts to socials and everything in between.</p>
-              <div className='flex gap-2  mt-3 text-bg13 font-bold text-sm'>
+              <div className='flex gap-2  mt-10 text-bg13 font-bold text-sm'>
                 <div className='border border-black rounded-full p-2 px-3'>Free</div>
                 <div className='border border-black rounded-full p-2'>Premium</div>
                 <div className='border border-black rounded-full p-2 px-3'>Pro</div>
@@ -61,7 +61,7 @@ const page = () => {
               <div className='w-full h-60 flex items-center justify-center relative'><Image src="/paranormal.webp" alt="moreEngagement" fill className=''></Image></div>
               <div className={`text-3xl my-8 font-semibold ${graphikSemiBold.className}`}>More engagement</div>
               <p className={`text-md-lg ${graphikMedium.className}`}>Let your followers enjoy all content and important links from one easy spot with just a few clicks.</p>
-              <div className='flex gap-2  mt-3 text-black font-bold text-sm'>
+              <div className='flex gap-2  mt-10 text-black font-bold text-sm'>
                 <div className='border border-black rounded-full p-2 px-3'>Free</div>
                 <div className='border border-black rounded-full p-2'>Premium</div>
                 <div className='border border-black rounded-full p-2 px-3'>Pro</div>
@@ -72,7 +72,7 @@ const page = () => {
               <div className='w-full h-60 flex items-center justify-center relative'><Image src="/3comp.webp" alt="moreMoney" fill className=''></Image></div>
               <div className={`text-3xl my-8 font-semibold ${graphikSemiBold.className}`}>More money</div>
               <p className={`text-md-lg ${graphikMedium.className}`}>Sell your products, take service payments and add a “Tip Jar” to earn money with your content.</p>
-              <div className='flex gap-2  mt-3 text-white font-bold text-sm'>
+              <div className='flex gap-2  mt-10 text-white font-bold text-sm'>
                 <div className='border border-white rounded-full p-2 px-3'>Free</div>
                 <div className='border border-white rounded-full p-2'>Premium</div>
                 <div className='border border-white rounded-full p-2 px-3'>Pro</div>

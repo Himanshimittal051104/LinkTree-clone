@@ -29,7 +29,7 @@ const Tools = () => {
         <SwiperSlide>
           <div className='flex items-center justify-center w-full h-full gap-2'>
             <div className='flip-card w-28 h-28'>
-              <div className='flip-card-inner '>
+              <div className='flip-card-inner flip-card-inner-auto'>
                 <div className='w-full h-full rounded-2xl bg-yellow-300 relative flip-card-front'>
                   <Image src="/mailchimp.png" alt="mailchimp" fill className='p-4'></Image>
                 </div>
@@ -39,7 +39,7 @@ const Tools = () => {
               </div>
             </div>
             <div className='flip-card w-28 h-28'>
-              <div className='flip-card-inner '>
+              <div className='flip-card-inner flip-card-inner-auto'>
                 <div className='w-full h-full rounded-full bg-customOrange relative flip-card-front'>
                   <Image src="/zapier.png" alt="zapier" fill className='p-4'></Image>
                 </div>
@@ -49,7 +49,7 @@ const Tools = () => {
               </div>
             </div>
             <div className='flip-card w-28 h-28'>
-              <div className='flip-card-inner '>
+              <div className='flip-card-inner flip-card-inner-auto'>
                 <div className='w-full h-full rounded-2xl bg-blue-900 relative flip-card-front'>
                   <Image src="/paypal.png" alt="paypal" fill className='p-4'></Image>
                 </div>
