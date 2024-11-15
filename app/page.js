@@ -122,7 +122,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 pb-28 px-24 gap-6">
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%]"><Tools/></div>
+            <div className="h-[48vh] w-full"><Tools/></div>
             <p className="px-8 text-md-lg font-semibold text-center">Seamlessly connect your Linktree with the tools you already use.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">

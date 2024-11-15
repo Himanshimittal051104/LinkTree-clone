@@ -48,7 +48,6 @@
 
 .flip-card-back {
   transform: rotateY(180deg);
-  /* transform-origin:right; */
 }
 
 .flippedEngage {
@@ -64,6 +63,9 @@
 .rotate:hover {
   transform: skewY(-10deg) scale(1.2);
   /* z-index:1; */
+}
+.lowScale{
+  transform: scale(0.9);
 }
 
 .negativeTransition{

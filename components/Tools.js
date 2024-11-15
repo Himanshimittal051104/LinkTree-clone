@@ -1,12 +1,26 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay, FreeMode } from 'swiper/modules';
 const Tools = () => {
+  const [scale, setScale] = useState(1);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setScale(0.8);
+      
+      const revertScalingTimer = setTimeout(() => {
+        setScale(1); 
+      }, 300);
+
+      return () => clearTimeout(revertScalingTimer);
+    }, 3700);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
-    <div className="w-full h-full flex items-center justify-center">
+    <div className="w-full h-full">
       <Swiper
         slidesPerView={1}
         loop={true}
@@ -22,19 +36,20 @@ const Tools = () => {
         modules={[Navigation, FreeMode, Autoplay]}
       >
         <SwiperSlide>
-          <div className='flex items-center justify-center w-full h-full gap-2 '>
-            <div className='bg-customLight text-customOlive text-2xl font-semibold rounded-full py-4 px-12'>{`linktr.ee/me`}</div>
+          <div className='flex items-center justify-center w-full h-[48vh] gap-2'>
+            <div className={`bg-customLight text-customOlive text-3xl font-semibold  rounded-full py-5 px-14`} style={{transform: `scale(${scale})`}}>{`linktr.ee/me`}
+              </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='flex items-center justify-center w-full h-full gap-2'>
+          <div className='flex items-center justify-center w-full h-[48vh] gap-2'>
             <div className='flip-card w-28 h-28'>
               <div className='flip-card-inner flip-card-inner-auto'>
                 <div className='w-full h-full rounded-2xl bg-yellow-300 relative flip-card-front'>
                   <Image src="/mailchimp.png" alt="mailchimp" fill className='p-4'></Image>
                 </div>
                 <div className='w-full h-full rounded-full bg-customLight relative flip-card-back'>
-                  <Image src="/Sheets.png" alt="googlesheets" fill className='p-4'></Image>
+                  <Image src="/Sheets.png" alt="googlesheets" fill className='p-8'></Image>
                 </div>
               </div>
             </div>
@@ -44,7 +59,7 @@ const Tools = () => {
                   <Image src="/zapier.png" alt="zapier" fill className='p-4'></Image>
                 </div>
                 <div className='w-full h-full rounded-2xl bg-customGreen relative flip-card-back'>
-                  <Image src="/shopify.png" alt="shopify" fill className='p-4'></Image>
+                  <Image src="/shopify.png" alt="shopify" fill className='p-8'></Image>
                 </div>
               </div>
             </div>
@@ -54,7 +69,7 @@ const Tools = () => {
                   <Image src="/paypal.png" alt="paypal" fill className='p-4'></Image>
                 </div>
                 <div className='w-full h-full rounded-full bg-black relative flip-card-back'>
-                  <Image src="/square.png" alt="square" fill className='p-3'></Image>
+                  <Image src="/square.png" alt="square" fill className='p-4'></Image>
                 </div>
               </div>
             </div>
