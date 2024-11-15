@@ -62,12 +62,7 @@
 
 .rotate:hover {
   transform: skewY(-10deg) scale(1.2);
-  /* z-index:1; */
 }
-.lowScale{
-  transform: scale(0.9);
-}
-
 .negativeTransition{
   transform: translateX(-15px) skewY(-10deg);
   transition: transform 0.3s ease;

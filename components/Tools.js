@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,useRef} from 'react'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -6,19 +6,24 @@ import 'swiper/css/navigation';
 import { Navigation, Autoplay, FreeMode } from 'swiper/modules';
 const Tools = () => {
   const [scale, setScale] = useState(1);
+  const scaleDownTimeout=useRef(null);
+
+  const handleSlideChange = (swiper) => {
+    clearTimeout(scaleDownTimeout.current); 
+
+    if (swiper.realIndex === 0) {
+      scaleDownTimeout.current = setTimeout(() => {
+        setScale(0.8);
+      }, 3700);
+    } else {
+      setScale(1); 
+    }
+  };
+
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setScale(0.8);
-      
-      const revertScalingTimer = setTimeout(() => {
-        setScale(1); 
-      }, 300);
-
-      return () => clearTimeout(revertScalingTimer);
-    }, 3700);
-
-    return () => clearInterval(intervalId);
+    return () => clearTimeout(scaleDownTimeout.current);
   }, []);
+
   return (
     <div className="w-full h-full">
       <Swiper
@@ -34,6 +39,7 @@ const Tools = () => {
         speed={1500}
         navigation={false}
         modules={[Navigation, FreeMode, Autoplay]}
+        onSlideChange={handleSlideChange}
       >
         <SwiperSlide>
           <div className='flex items-center justify-center w-full h-[48vh] gap-2'>
