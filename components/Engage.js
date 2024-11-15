@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useEffect,useRef } from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
 const Engage = () => {
-    const [flipped, setFlipped] = useState(false)
-    
+    const [flipped, setFlipped] = useState(false);
+    const intervalRef = useRef(null);
+
+    const handleClick = () => {
+        setFlipped(!flipped);
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+        }
+        intervalRef.current = setInterval(() => {
+            setFlipped(prev => !prev);
+        }, 4000);
+    };
+    useEffect(() => {
+        return () => clearInterval(intervalRef.current);
+    }, []);
 
     return (
-        <div className='w-full h-full flex justify-center relative rounded-3xl cursor-pointer ' onClick={()=>setFlipped(!flipped)}>
+        <div className='w-full h-full flex justify-center relative rounded-3xl cursor-pointer ' onClick={handleClick}>
             <div className='rounded-3xl h-[80%] w-[16vw] px-4 relative' >
                 <Image src="/beach.jpg" alt="beach" fill className='rounded-3xl '></Image>
                 <div className='absolute rounded-full h-24 w-24 top-12 left-1/2 -ml-10'>

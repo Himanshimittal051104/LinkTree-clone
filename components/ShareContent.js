@@ -1,13 +1,51 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import React from 'react'
 import Image from 'next/image'
 const ShareContent = () => {
     const [rotation1, setRotation1] = useState(0);
     const [rotation2, setRotation2] = useState(0);
     const [rotation3, setRotation3] = useState(0);
+    const [activeCardIndex, setActiveCardIndex] = useState(-1);
+    const [isAutoFlipping, setIsAutoFlipping] = useState(true);
+
+    useEffect(() => {
+        let interval;
+        if (isAutoFlipping) {
+            interval = setInterval(() => {
+                setActiveCardIndex((prevIndex) => (prevIndex + 1) % 3);
+                if (activeCardIndex === 0) {
+                    setRotation1((prev) => prev + 180);
+                } else if (activeCardIndex === 1) {
+                    setRotation3((prev) => prev + 180);
+                } else {
+                    setRotation2((prev) => prev + 180);
+                }
+            }, 1000);
+        }
+
+        return () => clearInterval(interval);
+    }, [activeCardIndex, isAutoFlipping]);
+
+    const handleClick = (cardIndex) => {
+        if (activeCardIndex != cardIndex) {
+            setIsAutoFlipping(false);
+            if (cardIndex === 1) {
+                setRotation1((prev) => prev + 180);
+            } else if (cardIndex === 2) {
+                setRotation3((prev) => prev + 180);
+            } else {
+                setRotation2((prev) => prev + 180);
+            }
+            setTimeout(() => {
+                setActiveCardIndex((activeCardIndex +1)%3);
+                setIsAutoFlipping(true);
+            }, 1000);
+        }
+    };
+
     return (
         <div className='w-full h-full flex items-center justify-center gap-2 '>
-            <div className='rounded-2xl w-[10vw] h-[20vh]  flip-card2' onClick={() => setRotation1((prev) => prev + 180)}>
+            <div className={`rounded-2xl w-[10vw] h-[20vh]  flip-card2 `} onClick={() => handleClick(1)}>
                 <div className='flip-card-inner2' style={{
                     transform: `rotateY(${rotation1}deg)`
                 }} >
@@ -34,12 +72,12 @@ const ShareContent = () => {
                     </div>
                 </div>
             </div>
-            <div className='rounded-2xl w-[8vw] h-[20vh] flip-card2' onClick={() => setRotation2((prev) => prev + 180)}>
+            <div className='rounded-2xl w-[8vw] h-[20vh] flip-card2' onClick={() => handleClick(0)}>
                 <div className='flip-card-inner2 ' style={{
                     transform: `rotateY(${rotation2}deg)`
                 }}>
                     <div className={`rounded-2xl bg-sky-500  p-3 cursor-pointer flip-card-face flip-card-face1 ${rotation2 % 720 == 0 || rotation2 % 720 == 180 ? "opacity-100" : "opacity-0"}`}>
-                        <div className='mb-3'><Image src="/twitter.svg" alt="twitter" width="30" height="30"></Image>
+                        <div className='mb-3'><Image src="/twitter.png" alt="twitter" width="30" height="30"></Image>
                         </div>
                         <div className='flex flex-col gap-1'>
                             <div className='rounded-full h-2.5 w-full bg-sky-300'></div>
@@ -49,9 +87,9 @@ const ShareContent = () => {
                     </div>
                     <div className={`rounded-2xl bg-sky-700 flip-card-face flip-card-face2 p-3 cursor-pointer ${rotation2 % 720 == 0 || (rotation2 + 180) % 720 == 0 ? "opacity-0" : "opacity-100"}`}>
                         <div className='flex flex-col gap-1 mt-5'>
-                            <div className='rounded-full h-2.5 w-full bg-sky-300'></div>
-                            <div className='rounded-full h-2.5 w-full bg-sky-300'></div>
-                            <div className='rounded-full h-2.5 w-[50%] bg-sky-300'></div>
+                            <div className='rounded-full h-2.5 w-full bg-sky-400'></div>
+                            <div className='rounded-full h-2.5 w-full bg-sky-400'></div>
+                            <div className='rounded-full h-2.5 w-[50%] bg-sky-400'></div>
                         </div>
                     </div>
                     <div className={`rounded-2xl  bg-pink-500 flip-card-face flip-card-face3 p-3 cursor-pointer ${rotation2 % 720 == 0 || rotation2 % 720 == 180 ? "opacity-0" : "opacity-100"}`}>
@@ -70,7 +108,7 @@ const ShareContent = () => {
                     </div>
                 </div>
             </div>
-            <div className='rounded-2xl w-[13vw] h-[20vh] flip-card2 ' onClick={() => setRotation3((prev) => prev + 180)}>
+            <div className='rounded-2xl w-[13vw] h-[20vh] flip-card2 ' onClick={() => handleClick(2)}>
                 <div className='flip-card-inner2' style={{
                     transform: `rotateY(${rotation3}deg)`
                 }}>

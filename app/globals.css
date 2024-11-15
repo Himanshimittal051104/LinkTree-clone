@@ -66,16 +66,7 @@
   /* z-index:1; */
 }
 
-.rotate:hover:nth-child(2)~.rotate:nth-child(1),
-.rotate:hover:nth-child(3)~.rotate:nth-child(1),
-.rotate:hover:nth-child(3)~.rotate:nth-child(2),
-.rotate:hover:nth-child(4)~.rotate:nth-child(1),
-.rotate:hover:nth-child(4)~.rotate:nth-child(2),
-.rotate:hover:nth-child(4)~.rotate:nth-child(3),
-.rotate:hover:nth-child(5)~.rotate:nth-child(1),
-.rotate:hover:nth-child(5)~.rotate:nth-child(2),
-.rotate:hover:nth-child(5)~.rotate:nth-child(3),
-.rotate:hover:nth-child(5)~.rotate:nth-child(4) {
+.negativeTransition{
   transform: translateX(-15px) skewY(-10deg);
   transition: transform 0.3s ease;
 }
@@ -83,7 +74,7 @@
 .rotate:hover:nth-child(1)~.rotate:nth-child(n+2),
 .rotate:hover:nth-child(2)~.rotate:nth-child(n+3),
 .rotate:hover:nth-child(3)~.rotate:nth-child(n+4),
-.rotate:hover:nth-child(4)~.rotate:nth-child(n+5) {
+.rotate:hover:nth-child(4)~.rotate:nth-child(n+5){
   transform: translateX(15px) skewY(-10deg);
   transition: transform 0.3s ease;
 }
