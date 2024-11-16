@@ -28,7 +28,7 @@ const page = () => {
 
     return (
         <div>
-            <div className="bg-bg13 grid grid-cols-2 px-24 pt-96 ">
+            <div className="bg-bg13 grid grid-cols-2 px-24 pt-40">
                 <div className="flex flex-col gap-8">
                     <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Say more with your characters. Join the #1 link in bio tool for Twitter</p>
                     <p className="text-bg12 font-semibold text-lg">Discover how 50M+ creators, musicians, influencers, and brands use this new Twitter tool to show their audience everything they do with one simple link.</p>

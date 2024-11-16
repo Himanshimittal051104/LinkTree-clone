@@ -3,7 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import localFont from "next/font/local";
 import About from '@/components/About';
-import QuestionsLinkedin from '@/components/QuestionsLinkedin';
+import QuestionsLinkedln from '@/components/QuestionsLinkedln';
 const graphik = localFont({
   src: "../fonts/GraphikBold.otf",
   variable: "--font-graphik",
@@ -28,7 +28,7 @@ const page = () => {
 
   return (
     <div>
-      <div className="bg-bg13 grid grid-cols-2 px-24 pt-96 ">
+      <div className="bg-bg13 grid grid-cols-2 px-24 pt-40 ">
         <div className="flex flex-col gap-8">
           <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Grow your LinkedIn community, and connect them to everything you do</p>
           <p className="text-bg12 font-semibold text-lg">Discover how 50M+ Creators, Entrepreneurs, Small Businesses, Brands and Candidates help their network, connections and followers discover everything they do with one simple link.</p>
@@ -204,7 +204,7 @@ const page = () => {
         </div>
         <div className={`w-full rounded-full h-[60vh] bg-bg11 text-customDark flex items-center justify-center text-5xl font-bold`}>Sign up for free now</div>
       </div>
-      <QuestionsLinkedin />
+      <QuestionsLinkedln />
       <About />
     </div >
   )

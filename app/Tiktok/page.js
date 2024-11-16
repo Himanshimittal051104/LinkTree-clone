@@ -29,7 +29,7 @@ const page = () => {
 
     return (
         <div>
-            <div className="bg-customSapphire grid grid-cols-2 gap-8 px-24 pt-60 pb-24 ">
+            <div className="bg-customSapphire grid grid-cols-2 gap-8 px-24 pt-10 pb-24 ">
                 <div className="flex flex-col gap-8 justify-center ">
                     <p className={`text-white text-7xl font-bold ${graphik.className}`}>Get more TikTok followers</p>
                     <p className="text-white font-semibold text-md-lg">Showcase your TikTok profile and the videos you love most and give your Linktree visitors an easy way to follow you for more.</p>

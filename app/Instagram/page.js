@@ -28,7 +28,7 @@ const page = () => {
 
   return (
     <div>
-      <div className="bg-bg13 grid grid-cols-2 px-24 pt-60 ">
+      <div className="bg-bg13 grid grid-cols-2 px-24 -mt-10 ">
         <div className="flex flex-col gap-8 justify-center">
           <p className={`text-bg12 text-7xl font-bold ${graphik.className}`}>The best link in bio tool for Instagram</p>
           <p className="text-bg12 font-semibold text-lg">Join the 50M+ creators, musicians, influencers and brands using Linktree to share content and grow audiences with one simple link.</p>
