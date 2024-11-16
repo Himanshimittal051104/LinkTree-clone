@@ -43,7 +43,7 @@ const oswald = localFont({
   weight: "100 900",
 });
 export default function Home() {
-  
+
   return (
     <>
       <div className="bg-bg1 grid grid-cols-2 px-24 py-40">
@@ -67,14 +67,15 @@ export default function Home() {
         <div className="flex flex-col gap-8 justify-start">
           <p className={`text-bg13 text-6xl font-bold ${graphik.className}`}>Create and customize your Linktree in minutes</p>
           <p className="text-bg13 font-semibold">Connect your TikTok, Instagram, Twitter, website, store, videos, music, podcast, events and more. It all comes together in a link in bio landing page designed to convert.</p>
-          <button className="bg-bg13 rounded-full w-[30%] py-3 text-lg text-white">Get started for free</button>
+          <Link href="/Signup"><button className="bg-bg13 rounded-full w-[30%] py-3 text-lg text-white">Get started for free</button></Link>
         </div>
       </div>
       <div className="bg-bg3 grid grid-cols-2 py-40 px-24">
         <div className="flex flex-col gap-8 justify-start ">
           <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Share your Linktree from your Instagram, TikTok, Twitter and other bios</p>
           <p className="text-bg12 font-semibold">Add your unique Linktree URL to all the platforms and places you find your audience. Then use your QR code to drive your offline traffic online.</p>
-          <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg text-customDark font-semibold">Get started for free</button>
+          <Link href="/Signup">
+            <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg text-customDark font-semibold">Get started for free</button></Link>
         </div>
         <div><Shopavery /></div>
       </div>
@@ -88,12 +89,13 @@ export default function Home() {
           <div className="flex flex-col gap-8 justify-start">
             <p className={` text-6xl font-bold ${graphik.className} text-customDark`}>Analyze your audience and keep your followers engaged</p>
             <p className=" font-semibold">Track your engagement over time, monitor revenue and learn what’s converting your audience. Make informed updates on the fly to keep them coming back.</p>
-            <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg">Get started for free</button>
+            <Link href="/Signup">
+            <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg">Get started for free</button></Link>
           </div>
         </div>
         <div className="pt-28  text-center px-24">
           <p className="text-6xl font-bold text-customDark">The only link in bio trusted by 50M+</p>
-          <div className="text-6xl font-bold text-blue-600 mt-3 w-[100%] h-[70px]"><Field/></div>
+          <div className="text-6xl font-bold text-blue-600 mt-3 w-[100%] h-[70px]"><Field /></div>
         </div>
         <div className="pt-28 pb-44">
           <CelebrityCarousel />
@@ -101,17 +103,17 @@ export default function Home() {
         <div className="grid grid-cols-2 h-[130vh] gap-4 px-24">
           <div className="flex flex-col gap-4">
             <div className="bg-bg12 rounded-3xl h-[50%] pb-20">
-              <div className="h-[90%] rounded-3xl flex items-center justify-center"><ShareContent/></div>
+              <div className="h-[90%] rounded-3xl flex items-center justify-center"><ShareContent /></div>
               <div className="pl-12 w-[80%]"><a href='' className="underline text-bg13 font-bold text-3xl">Share your content in limitless ways on your linktree.</a></div>
             </div>
             <div className="bg-bg11 rounded-3xl h-[50%] pb-20">
-              <div className="h-[80%] rounded-3xl flex items-center justify-center"><SellProducts/></div>
+              <div className="h-[80%] rounded-3xl flex items-center justify-center"><SellProducts /></div>
               <div className="pl-12 w-[70%]">
                 <a href='' className="text-customDark font-bold text-3xl underline">{`Sell products and collect payments.It's monetization made simple.`}</a></div>
             </div>
           </div>
           <div className="bg-red-900 rounded-3xl pb-20">
-            <div className="h-[90%] rounded-3xl flex items-center justify-center py-24"><Engage/></div>
+            <div className="h-[90%] rounded-3xl flex items-center justify-center py-24"><Engage /></div>
             <div className="pl-12 w-[70%]">
               <a href='' className="text-bg12 font-bold text-3xl underline">Grow,own and engage your audience by unifying them in one place.</a></div>
           </div>
@@ -122,15 +124,15 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 pb-28 px-24 gap-6">
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[48vh] w-full"><Tools/></div>
+            <div className="h-[48vh] w-full"><Tools /></div>
             <p className="px-8 text-md-lg font-semibold text-center">Seamlessly connect your Linktree with the tools you already use.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%] flex items-center justify-center"><Brand/></div>
+            <div className="h-[80%] flex items-center justify-center"><Brand /></div>
             <p className="px-8 text-md-lg font-semibold text-center">Customize your Linktree to match your brand. Make it feel like you.</p>
           </div>
           <div className="bg-white rounded-2xl h-[60vh]">
-            <div className="h-[80%]"><ScheduleContent/></div>
+            <div className="h-[80%]"><ScheduleContent /></div>
             <p className="px-8 text-md-lg font-semibold text-center">Manage, update and schedule content with our quick, easy editor.</p>
           </div>
         </div>
@@ -144,7 +146,7 @@ export default function Home() {
           </div>
           <div className={`bg-white rounded-3xl py-7 text-center mt-4 w-[25%] mx-auto text-gray-600 font-bold text-xl ${ptserif.className} small-spacing`}>Forbes</div>
         </div>
-        <PersonalityCarousel/>
+        <PersonalityCarousel />
       </div>
       <Questions />
       <About />

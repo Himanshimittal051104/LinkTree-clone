@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import localFont from "next/font/local";
 import About from '@/components/About';
+import Link from 'next/link';
 import QuestionsTwitter from '@/components/QuestionsTwitter';
 const graphik = localFont({
     src: "../fonts/GraphikBold.otf",
@@ -32,7 +33,8 @@ const page = () => {
                 <div className="flex flex-col gap-8">
                     <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Say more with your characters. Join the #1 link in bio tool for Twitter</p>
                     <p className="text-bg12 font-semibold text-lg">Discover how 50M+ creators, musicians, influencers, and brands use this new Twitter tool to show their audience everything they do with one simple link.</p>
-                    <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
                 </div>
                 <div className='flex  justify-center h-[90vh] relative'>
                     <Image src="/LinkTwitter.avif" alt="twitterPage" fill className='-mt-40'></Image>
@@ -42,7 +44,8 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center pb-6 gap-4 w-[65%] mx-auto'>
                     <p className={` text-6xl text-center font-bold ${graphik.className}`}>Unlock the full power of your Twitter account</p>
                     <p className={` text-lg text-center font-semibold`}>With Linktree’s link in bio for Twitter you can power up your tweets and help your audience discover everything you have to offer beyond 280 characters.</p>
-                    <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[25%] font-semibold mt-2">Sign up for free now</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg12 rounded-full p-3 py-3 text-lg w-[100%] font-semibold mt-2">Sign up for free now</button></Link>
                 </div>
                 <div className='pb-60'>
                     <div className={`mt-20 grid grid-cols-3 gap-4 `}>
@@ -76,7 +79,8 @@ const page = () => {
                     <div className="flex flex-col gap-8">
                         <p className={` text-7xl font-bold ${graphik.className}`}>Use data to grow engagement and sales</p>
                         <p className=" font-semibold text-lg">Get accurate insights and know exactly which content works best for you. Linktree’s easy-to-use analytics dashboard tracks your clicks, measures click-through rates and analyzes conversions, so you can make data-driven decisions to increase engagement and sales.</p>
-                        <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+                        <Link href="/Signup">
+                        <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
                     </div>
                 </div>
                 <div className='pb-24'>
@@ -103,7 +107,8 @@ const page = () => {
                 <div className='flex flex-col justify-center items-center pb-6 gap-4 w-[65%] mx-auto'>
                     <p className={` text-6xl text-center font-bold ${graphik.className}`}>Turn your link in bio into your own mini website</p>
                     <p className={` text-xl text-center font-semibold text-gray-500 ${graphikMedium.className}`}>It takes seconds to turn your bio into a mini website, allowing your followers to engage with your content, discover you on other platforms or purchase and support you with one simple link.</p>
-                    <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[25%] font-semibold mt-2">Sign up for free now</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg12 rounded-full p-3 py-3 text-lg w-[100%] font-semibold mt-2">Sign up for free now</button></Link>
                 </div>
                 <div className='pb-60'>
                     <div className={`mt-20 grid grid-cols-3 gap-4 `}>
@@ -138,14 +143,16 @@ const page = () => {
                 <div className="flex flex-col gap-8 justify-center ml-10">
                     <p className={`text-bg13 text-7xl font-bold ${graphik.className}`}>Never Change Your Bio Link Again</p>
                     <p className="text-bg13 font-semibold text-lg">Easily keep your Twitter profile link up to date and manage all of the content you want to share with your followers through your Linktree account. You can add and share your latest blogs, TikToks, YouTube videos, or even showcase your newest product, music, podcast, events and promos.</p>
-                    <button className="bg-bg13 text-white rounded-full p-3 py-3 text-lg w-[35%] font-semibold">Sign up for free now</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg13 text-white rounded-full p-3 py-3 text-lg w-[35%] font-semibold">Sign up for free now</button></Link>
                 </div>
             </div>
             <div className="bg-customSapphire grid grid-cols-2 gap-8 px-24 pt-60 pb-24 ">
                 <div className="flex flex-col gap-8 justify-center ">
                     <p className={`text-white text-6xl font-bold ${graphik.className}`}>See what your followers engage with</p>
                     <p className="text-white font-semibold text-lg">Take the guesswork out of what your followers find interesting, and want to learn about from you… Linktree has razor- sharp analytics and with an intuitive dashboard that allows you to stay on top of your most loved content, and easily identify what your followers love the most.</p>
-                    <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
                 </div>
                 <div className='flex  justify-center h-[100vh] relative '>
                     <Image src="/engagetwit.avif" alt="engagetwitt" fill className=''></Image>
@@ -158,7 +165,9 @@ const page = () => {
                 <div className="flex flex-col gap-8 justify-center">
                     <p className={`text-black text-6xl font-bold ${graphik.className}`}>Take fast payments with Commerce Links</p>
                     <p className="text-black font-semibold text-lg">Connect your store and start getting paid directly on Twitter via your Linktree. Make buying a seamless experience with just one link. No tech setup or complicated systems needed!</p>
-                    <button className="bg-bg12  text-bg13 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg12  text-bg13 rounded-full p-2 py-3 text-lg w-[35%] font-semibold">Sign up for free now</button>
+                    </Link>
                 </div>
             </div>
             <div className=' bg-customLight px-24'>

@@ -1,5 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { signIn, useSession, signOut } from 'next-auth/react'
 const Page = () => {
   return (
     <div className='grid grid-cols-2 max-h-screen '>
@@ -18,7 +21,7 @@ const Page = () => {
         </div>
         <div className='mt-4 mb-4 text-center text-gray-600'>OR</div>
         <div className=''>
-          <div className='text-black rounded-full p-2 font-semibold text-md-lg border  border-gray-400 flex justify-center items-center gap-1'><Image src="/google.png" alt="google" width={30} height={30}></Image>Continue with Google</div>
+          <div className='text-black rounded-full p-2 font-semibold text-md-lg border  border-gray-400 flex justify-center items-center gap-1 cursor-pointer' onClick={() => signIn("google", { callbackUrl: "/"})}><Image src="/google.png" alt="google" width={30} height={30}></Image>Continue with Google</div>
           <div className='text-black rounded-full p-2 font-semibold text-md-lg mt-2 border  border-gray-400 gap-1 flex justify-center items-center'><Image src="/apple.png" alt="apple" width={20} height={20}></Image>Continue with Apple</div>
           <div className='text-black rounded-full p-2  font-semibold text-md-lg mt-2 border  border-gray-400 flex justify-center items-center gap-1'><Image src="/phone.svg" alt="phone" width={20} height={20}></Image>Continue with phone number</div>
         </div>
@@ -29,7 +32,9 @@ const Page = () => {
         </div>
         <div className='text-gray-600 text-center mb-28'>
           <span>{`Dont't have an account?`}</span>
-          <span className='underline text-purple-700 ml-1'>Sign up.</span>
+          <Link href="/Signup">
+            <span className='underline text-purple-700 ml-1'>Sign up.</span>
+          </Link>
         </div>
         <span className='text-gray-700 text-xs '>Cookie preferences</span>
       </div>

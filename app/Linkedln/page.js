@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import localFont from "next/font/local";
 import About from '@/components/About';
+import Link from 'next/link';
 import QuestionsLinkedln from '@/components/QuestionsLinkedln';
 const graphik = localFont({
   src: "../fonts/GraphikBold.otf",
@@ -32,7 +33,8 @@ const page = () => {
         <div className="flex flex-col gap-8">
           <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>Grow your LinkedIn community, and connect them to everything you do</p>
           <p className="text-bg12 font-semibold text-lg">Discover how 50M+ Creators, Entrepreneurs, Small Businesses, Brands and Candidates help their network, connections and followers discover everything they do with one simple link.</p>
-          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
         <div className='flex  justify-center h-[90vh] relative'>
           <Image src="/LinkLinkedlin.avif" alt="twitterPage" fill className='-mt-40'></Image>
@@ -47,7 +49,8 @@ const page = () => {
           <p className={` text-6xl font-bold ${graphik.className} text-customDark`}>Show your LinkedIn network everything you do</p>
           <p className=" font-semibold text-md-lg mt-8">Now you can add unlimited links to your LinkedIn by using Linktree and LinkedIn’s share links tool! LinkedIn’s new free Creator Mode allows you to add a single, visible link in your LinkedIn profile.</p>
           <p className=" font-semibold text-md-lg mb-12">When potential employers, clients, or connections find your profile or trending post, they can access your work, portfolio, resume, website, socials, or content within seconds.</p>
-          <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[35%] font-semibold ">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[35%] font-semibold ">Sign up for free now</button></Link>
         </div>
       </div>
         <div className='flex flex-col justify-center items-center pb-6 gap-4 w-[60%] mx-auto'>
@@ -123,7 +126,8 @@ const page = () => {
         <div className="flex flex-col gap-8 justify-center ml-10">
           <p className={`text-customDark text-7xl font-bold ${graphik.className}`}>Establish yourself as an expert</p>
           <p className="text-customDark font-semibold text-lg">Show your connections what makes you an expert in your field. Linktree makes it easier to connect future employers or clients with your most impressive content with just one click.or even showcase your newest product, music, podcast, events and promos.</p>
-          <button className="bg-customDark text-white rounded-full p-3 py-3 text-lg w-[35%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-customDark text-white rounded-full p-3 py-3 text-lg w-[35%] font-semibold">Sign up for free now</button></Link>
         </div>
         <div className='flex  justify-center h-[100vh] relative'>
           <Image src="/LinkedExpert.avif" alt="goodCompany" fill className='-mt-5'></Image>
@@ -136,7 +140,8 @@ const page = () => {
         <div className="flex flex-col gap-8 justify-center ">
           <p className={`text-white text-6xl font-bold ${graphik.className}`}>Build your professional brand</p>
           <p className="text-white font-semibold text-md-lg">LinkedIn is fast becoming more than just “a work thing.” It’s a place where you can establish and strengthen your professional personality and brand. Whether it’s InMail, the comments section or on your profile, increase your visibility as a knowledgeable professional and stand out with your LinkedIn ‘Link In Profile’ from Linktree.</p>
-          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
       </div>
       <div className='bg-customLight px-24 pt-60 '>
@@ -147,7 +152,8 @@ const page = () => {
           <div className="flex flex-col gap-8">
             <p className={` text-7xl font-bold ${graphik.className}`}>Use data to grow your network and sales</p>
             <p className=" font-semibold text-lg">Get accurate insights and know exactly which content your connections are consuming. Linktree’s easy-to-use analytics dashboard tracks your clicks, measures click-through rates and analyzes conversions, so you can make data-driven decisions to get more connections and grow your network.</p>
-            <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+            <Link href="/Signup">
+            <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
           </div>
         </div>
         <div className='pb-24'>
@@ -176,7 +182,8 @@ const page = () => {
         <div className="flex flex-col gap-8">
           <p className={`text-bg12 text-6xl font-bold ${graphik.className}`}>See what’s popular with your connections</p>
           <p className="text-bg12 font-semibold text-lg">Take the guesswork out of what your network finds interesting and wants to learn about from you. Linktree has razor-sharp analytics with an intuitive dashboard to keep on top of your professional identity and easily identify what your network loves the most.</p>
-          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
         <div className='flex  justify-center h-[110vh] relative'>
           <Image src="/LinkedConnections.avif" alt="linkedPage" fill className='-mt-40'></Image>
@@ -202,7 +209,9 @@ const page = () => {
             <div className='text-3xl mt-8 '>Easily showcase your highlight reel to potential employers or clients</div>
           </div>
         </div>
+        <Link href="/Signup">
         <div className={`w-full rounded-full h-[60vh] bg-bg11 text-customDark flex items-center justify-center text-5xl font-bold`}>Sign up for free now</div>
+        </Link>
       </div>
       <QuestionsLinkedln />
       <About />

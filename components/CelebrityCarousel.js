@@ -30,7 +30,7 @@ const CelebrityCarousel = () => {
                                 <Image src="/funkyn.webp" alt="funkynutmeg" fill className="object-cover rounded-full "></Image>
                             </div>
                             <div className='flip-card-back flex items-center justify-center bg-bg12 rounded-full low'>
-                                <Link href=""> <button className=' bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/funkynutmeg</span></button></Link>
+                                <Link href=""> <button className=' bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/funkynutmeg</span></button></Link>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const CelebrityCarousel = () => {
                                 </Image>
                             </div>
                             <div className='flip-card-back low bg-bg12 flex items-center justify-center rounded-xl'>
-                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/hbo</span></button>
+                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/hbo</span></button>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const CelebrityCarousel = () => {
                                 <Image src="/comedyCentral.png" alt="comedycentral" width={300} height={300} className=" roundedP"></Image>
                             </div>
                             <div className='flip-card-back flex justify-center items-center roundedP bg-customNeon low'>
-                                <button className=' bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/comedycentral</span></button>
+                                <button className=' bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/comedycentral</span></button>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const CelebrityCarousel = () => {
                                 <Image src="/pharell.jpg" alt="pharrell" fill className=" object-top rounded-full "></Image>
                             </div>
                             <div className='flip-card-back bg-bg3 flex items-center justify-center rounded-full low'>
-                                <button className='mid absolute bg-white rounded-full px-4 py-2 flex justify-center items-center'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/pharrell</span></button>
+                                <button className='mid absolute bg-white rounded-full px-4 py-2 flex justify-center items-center'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/pharrell</span></button>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const CelebrityCarousel = () => {
                                 <Image src="/tonyHawk.jpg" alt="tonyhawk" fill className="object-cover roundedP "></Image>
                             </div>
                             <div className='flip-card-back flex items-center justify-center bg-customSapphire roundedP low'>
-                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/tonyhawk</span></button>
+                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/tonyhawk</span></button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const CelebrityCarousel = () => {
                                 <Image src="/laclippers.png" alt="laclippers" fill className="object-cover rounded-xl "></Image>
                             </div>
                             <div className='flip-card-back flex items-center justify-center bg-bg1 rounded-xl low' >
-                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/laclippers</span></button>
+                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/laclippers</span></button>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const CelebrityCarousel = () => {
                                 <Image src="/selena.webp" alt="selenagomez" fill className="object-cover roundedP roundedP"></Image>
                             </div>
                             <div className='flip-card-back items-center justify-center flex low bg-customMustardYellow roundedP'>
-                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/tree.svg" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/selenagomez</span></button>
+                                <button className='bg-white rounded-full px-4 py-2 flex justify-center items-center mid'><Image src="/linktreeBlack.png" alt="tree" width="30" height="30" ></Image><span className='font-semibold text-lg'>/selenagomez</span></button>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 import localFont from "next/font/local";
 import About from '@/components/About';
 import Field from '@/components/Field';
@@ -33,7 +34,8 @@ const page = () => {
                 <div className="flex flex-col gap-8 justify-center ">
                     <p className={`text-white text-7xl font-bold ${graphik.className}`}>Get more TikTok followers</p>
                     <p className="text-white font-semibold text-md-lg">Showcase your TikTok profile and the videos you love most and give your Linktree visitors an easy way to follow you for more.</p>
-                    <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free</button>
+                    <Link href="/Signup">
+                    <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free</button></Link>
                 </div>
                 <div className='flex  justify-center h-[90vh] relative '>
                     <Image src="/LinkedTiktok.avif" alt="LinkedBrandt" fill className=''></Image>
@@ -120,7 +122,9 @@ const page = () => {
                 <TiktokCarousel />
             </div>
             <div className=' bg-customLight px-24 pt-40 pb-40'>
+            <Link href="/Signup">
                 <div className={`w-full rounded-full h-[60vh] bg-customSapphire text-white flex items-center justify-center text-5xl font-bold`}>Sign up for free now</div>
+                </Link>
             </div>
             <div className="bg-bg12 grid grid-cols-2 px-24 pt-48 pb-32">
                 <div className='flex  justify-center h-[100vh] relative'>

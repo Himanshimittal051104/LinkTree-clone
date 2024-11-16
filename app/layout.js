@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import { usePathname } from 'next/navigation';
 import Navbar from "@/components/Navbar";
+import SessionWrapper from "@/components/SessionWrapper";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -35,10 +36,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className={`${pageBgClass}`}>
-          {!noNavbarRoutes.includes(pathname) && <Navbar />}
-          {children}
-        </div>
+        <SessionWrapper>
+          <div className={`${pageBgClass}`}>
+            {!noNavbarRoutes.includes(pathname) && <Navbar />}
+            {children}
+          </div>
+        </SessionWrapper>
       </body>
     </html>
   );

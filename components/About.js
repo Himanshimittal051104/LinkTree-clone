@@ -84,7 +84,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-[80%] mt-4 rounded-3xl h-[55vh] bg-bg12 mx-auto flex justify-center items-center text-bg13 font-bold gap-2 text-9xl">
+      <div className="w-[80%] mt-4 roundedP h-[55vh] bg-bg12 mx-auto flex justify-center items-center text-bg13 font-bold gap-2 text-9xl">
         <p>Linktree</p>
         <Image src="/treeP.svg" alt="tree" width={200} height='200'></Image>
       </div>

@@ -3,7 +3,9 @@ import React from 'react'
 import Image from "next/image";
 import localFont from "next/font/local";
 import About from '@/components/About';
+import Link from 'next/link';
 import QuestionsInsta from '@/components/QuestionsInsta';
+
 const graphik = localFont({
   src: "../fonts/GraphikBold.otf",
   variable: "--font-graphik",
@@ -32,7 +34,9 @@ const page = () => {
         <div className="flex flex-col gap-8 justify-center">
           <p className={`text-bg12 text-7xl font-bold ${graphik.className}`}>The best link in bio tool for Instagram</p>
           <p className="text-bg12 font-semibold text-lg">Join the 50M+ creators, musicians, influencers and brands using Linktree to share content and grow audiences with one simple link.</p>
-          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+            <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          </Link>
         </div>
         <div className='flex  justify-center h-[130vh] relative'>
           <Image src="/linkInsta.webp" alt="instagramPage" fill className=''></Image>
@@ -42,7 +46,9 @@ const page = () => {
         <div className='flex flex-col justify-center items-center pb-6 gap-4 w-[65%] mx-auto'>
           <p className={` text-6xl text-center font-bold ${graphik.className}`}>Get more with Linktree</p>
           <p className={` text-lg text-center font-semibold`}>Help your followers discover, enjoy and support everything you have to offer when you add Linktree’s ‘Link In Bio’ to your Instagram today.</p>
-          <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[25%] font-semibold mt-2">Sign up for free now</button>
+          <Link href="/Signup">
+            <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[100%] font-semibold mt-2">Sign up for free now</button>
+          </Link>
         </div>
         <div className='pb-60'>
           <div className={`mt-20 grid grid-cols-3 gap-4 `}>
@@ -88,7 +94,8 @@ const page = () => {
           <div className="flex flex-col gap-8">
             <p className={` text-7xl font-bold ${graphik.className}`}>More data, more growth</p>
             <p className=" font-semibold text-lg">Track your clicks, measure click-through rates and analyze conversions to make data-driven decisions that increase engagement and sales.</p>
-            <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+            <Link href="/Signup">
+            <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
           </div>
         </div>
         <div className='pb-24'>
@@ -122,7 +129,8 @@ const page = () => {
             <li className='flex gap-2'><Image src="/camera.png" alt="camera" width={30} height={30} ></Image>Insert your Linktree link In your Instagram bio.</li>
             <li className='flex gap-2 my-2'><Image src="/Money_Emoji_Icon.avif" alt="moneyEmoji" width={30} height={30} ></Image>Start sharing and start getting paid!</li>
           </ul>
-          <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg12 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
         <div className='flex  justify-center h-[100vh] relative'>
           <Image src="/minimalTime.webp" alt="instagramPageMinimalTime" fill className='-mt-20'></Image>
@@ -135,14 +143,16 @@ const page = () => {
         <div className="flex flex-col gap-8 justify-center ml-10">
           <p className={`text-bg13 text-7xl font-bold ${graphik.className}`}>Good company</p>
           <p className="text-bg13 font-semibold text-lg">Sign up for the same link in bio tool that 50M+ of your favorite creators, musicians, influencers and brands use to keep growing.</p>
-          <button className="bg-bg13 text-white rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg13 text-white rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
       </div>
       <div className="bg-bg13 grid grid-cols-2 px-24 pt-60 pb-24 ">
         <div className="flex flex-col gap-8 justify-center">
           <p className={`text-bg12 text-7xl font-bold ${graphik.className}`}>Performance insights</p>
           <p className="text-bg12 font-semibold text-lg">See razor-sharp analytics on an intuitive dashboard to easily identify what your followers love the most.</p>
-          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg11 rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
         <div className='flex  justify-center h-[100vh] relative'>
           <Image src="/performanceInsights.webp" alt="performanceInsights" fill className=''></Image>
@@ -155,7 +165,8 @@ const page = () => {
         <div className="flex flex-col gap-8 justify-center">
           <p className={`text-black text-6xl font-bold ${graphik.className}`}>Fast, easy payments</p>
           <p className="text-black font-semibold text-lg">Connect your store to get paid directly on your Instagram via your Linktree. No tech set up or complicated systems needed!</p>
-          <button className="bg-bg13 text-white rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button>
+          <Link href="/Signup">
+          <button className="bg-bg13 text-white rounded-full p-2 py-3 text-lg w-[30%] font-semibold">Sign up for free now</button></Link>
         </div>
       </div>
       <div className=' bg-customLight px-24'>
