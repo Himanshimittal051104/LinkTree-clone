@@ -31,7 +31,8 @@ module.exports = {
         customCyan:'#00b4d8',
         FallingTears:"#c0d6dd",
         customBlack:"#0f0f0f",
-        customMarketPlace:"#B69FAF"
+        customMarketPlace:"#B69FAF",
+        customDarkGray:"rgb(187, 190, 172)"
       },
       rotate: {
         'y-180': 'rotateY(180deg)',

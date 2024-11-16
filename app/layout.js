@@ -25,6 +25,8 @@ export default function RootLayout({ children }) {
     '/Tiktok': 'bg-customSapphire',
     '/Twitter': 'bg-bg13',
     '/Linkedln': 'bg-bg13',
+    "/Pricing":"bg-customLight",
+    
   };
   const pageBgClass = backgroundColors[pathname];
   return (

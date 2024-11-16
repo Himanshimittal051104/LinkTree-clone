@@ -33,7 +33,7 @@ const Navbar = () => {
               </div>
 
             </div>
-            <Link href="" className='text-gray-500 no-underline'><li className='cursor-pointer hover:bg-customLight px-3 py-2 hover:rounded-lg'>Pricing</li></Link>
+            <Link href="/Pricing" className='text-gray-500 no-underline'><li className='cursor-pointer hover:bg-customLight px-3 py-2 hover:rounded-lg'>Pricing</li></Link>
             <div className='relative group '>
               <Link href="" className='text-gray-500 no-underline'><li className='cursor-pointer hover:bg-customLight px-3 py-2 hover:rounded-lg'>Learn</li></Link>
               <div className={`w-[18vw] absolute top-10 rounded-2xl opacity-0  pointer-events-none group-hover:pointer-events-auto group-hover:!opacity-100 `}>
