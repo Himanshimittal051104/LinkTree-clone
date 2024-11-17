@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Questions from '@/components/Questions'
 import About from '@/components/About'
 import Field from '@/components/Field';
+import PricingCarousel from '@/components/PricingCarousel';
+import AllFeatures from '@/components/AllFeatures';
 const graphik = localFont({
     src: "../fonts/GraphikBold.otf",
     variable: "--font-graphik",
@@ -196,12 +198,15 @@ const Page = () => {
                     <p className='underline text-lg font-semibold' >Explore all features</p>
                     <Image src="/DownArrowB.svg" alt="downArrow" width={20} height={20}></Image>
                 </div>
-                <div className="pt-10 bg-customLight text-center px-24">
+                <div className="pt-28 bg-customLight text-center px-24">
                     <p className="text-6xl font-bold text-customDark">Trusted by 50M+</p>
                     <div className="text-6xl font-bold text-blue-600 mt-3 w-[100%] h-[70px]"><Field /></div>
                 </div>
-                <div className=' flex items-center justify-center rounded-full  h-[60vh] bg-bg12 w-[85%] mt-24 mx-auto text-bg13 font-bold text-5xl px-24 text-center'>Learn more about centralised login,single-invoice enterprise plans</div>
-                <div className='flex flex-col justify-center items-center pb-6 gap-4 w-[60%] mx-auto mt-20'>
+                <div className='mt-16'><PricingCarousel/></div>
+                <div className={`text-6xl my-32 px-24 ${graphik.className} text-customDark`}>All Features</div>
+                <div><AllFeatures/></div>
+                <div className=' flex items-center justify-center rounded-full  h-[60vh] bg-bg12 w-[85%] mt-52 mx-auto text-bg13 font-bold text-5xl px-24 text-center'>Learn more about centralised login,single-invoice enterprise plans</div>
+                <div className='flex flex-col justify-center items-center pb-6 gap-4 w-[60%] mx-auto mt-40'>
                     <p className={` text-6xl text-center font-bold w-[90%] ${graphik.className}`}>Everything you need, and then some.</p>
                     <button className="bg-bg12 rounded-full p-2 py-3 text-lg font-semibold mt-2 w-[18%]">Join the pros</button>
                 </div>
@@ -240,7 +245,7 @@ const Page = () => {
                     </div>
                 </div>
                 <div className='min-w-[100%]' >
-                    <div className="rounded-full mt-28 px-24 h-[50vh] w-[60%] mx-auto bg-black relative">
+                    <div className="rounded-full mt-40 px-24 h-[50vh] w-[60%] mx-auto bg-black relative">
                         <Image src='/Catie.avif' alt='luke' fill className="object-cover rounded-full"></Image>
                     </div>
                     <div className='w-[75%] mx-auto'>

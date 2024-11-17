@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       >
         <SessionWrapper>
           <div className={`${pageBgClass}`}>
-            {!noNavbarRoutes.includes(pathname) && <Navbar />}
+            {/* {!noNavbarRoutes.includes(pathname) && <Navbar />} */}
             {children}
           </div>
         </SessionWrapper>
