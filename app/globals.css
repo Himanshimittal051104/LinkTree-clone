@@ -123,3 +123,21 @@
 .flip-card-inner.flipped{
   transform: rotateY(180deg);
 }
+
+
+.up{
+transform: translateY(-65px);
+transition: all 0.5s ease-out;
+}
+.down{
+  transform: translateY(63px);
+  transition: all 0.5s ease-out;
+}
+.up2{
+  transform: translateY(-130px);
+  transition: all 0.5s ease-out;
+  }
+  .down2{
+    transform: translateY(126px);
+    transition: all 0.5s ease-out;
+  }

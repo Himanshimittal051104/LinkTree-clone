@@ -32,7 +32,11 @@ module.exports = {
         FallingTears:"#c0d6dd",
         customBlack:"#0f0f0f",
         customMarketPlace:"#B69FAF",
-        customDarkGray:"rgb(187, 190, 172)"
+        customDarkGray:"rgb(187, 190, 172)",
+        custom1:"#BBBEAC",
+        custom2:"#E9C0E9",
+        custom3:"#02ACC4",
+        custom4:"#D2EA83",
       },
       rotate: {
         'y-180': 'rotateY(180deg)',
