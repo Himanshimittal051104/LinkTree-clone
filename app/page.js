@@ -154,7 +154,6 @@ export default function Home() {
       </div>
       <Questions />
       <About />
-      {/* <Testing/> */}
     </>
   );
 }
