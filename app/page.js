@@ -46,8 +46,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-bg1 grid grid-cols-2 px-24 py-40">
-        <div className="flex flex-col gap-8">
+      <div className="bg-bg1 grid grid-cols-2 px-24">
+        <div className="flex flex-col gap-8 justify-center">
           <p className={`text-bg11 text-6xl font-bold ${graphik.className}`}>Everything you are. In one, simple link in bio.</p>
           <p className="text-bg11 font-semibold">Join 50M+ people using Linktree for their link in bio. One link to help you share everything you create, curate and sell from your Instagram, TikTok, Twitter, YouTube and other social media profiles.</p>
           <div className="mt-4 flex gap-2.5">
@@ -60,11 +60,15 @@ export default function Home() {
             <button className="bg-bg12 rounded-full px-4 py-3 text-lg ">Claim your Linktree</button>
           </div>
         </div>
-        <div></div>
+        <div>
+          <Image src="/engagetwit.avif" alt="homePage" width={800} height={800} className=""></Image>
+        </div>
       </div>
-      <div className="bg-bg12 grid grid-cols-2 px-24 py-56">
-        <div></div>
-        <div className="flex flex-col gap-8 justify-start">
+      <div className="bg-bg12 grid grid-cols-2 px-24 py-20">
+        <div>
+        <Image src="/goodCompany.webp" alt="homePage" width={800} height={800} className=""></Image>
+        </div>
+        <div className="flex flex-col gap-8 justify-center">
           <p className={`text-bg13 text-6xl font-bold ${graphik.className}`}>Create and customize your Linktree in minutes</p>
           <p className="text-bg13 font-semibold">Connect your TikTok, Instagram, Twitter, website, store, videos, music, podcast, events and more. It all comes together in a link in bio landing page designed to convert.</p>
           <Link href="/Signup"><button className="bg-bg13 rounded-full w-[30%] py-3 text-lg text-white">Get started for free</button></Link>
@@ -150,6 +154,7 @@ export default function Home() {
       </div>
       <Questions />
       <About />
+      {/* <Testing/> */}
     </>
   );
 }

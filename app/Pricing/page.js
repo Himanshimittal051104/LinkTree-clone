@@ -245,7 +245,7 @@ const Page = () => {
                     </div>
                 </div>
                 <div className='min-w-[100%]' >
-                    <div className="rounded-full mt-40 px-24 h-[50vh] w-[60%] mx-auto bg-black relative">
+                    <div className="rounded-full mt-40 px-24 h-[50vh] w-[60%] mx-auto  relative">
                         <Image src='/Catie.avif' alt='luke' fill className="object-cover rounded-full"></Image>
                     </div>
                     <div className='w-[75%] mx-auto'>

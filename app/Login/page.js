@@ -22,7 +22,7 @@ const Page = () => {
         <div className='mt-4 mb-4 text-center text-gray-600'>OR</div>
         <div className=''>
           <div className='text-black rounded-full p-2 font-semibold text-md-lg border  border-gray-400 flex justify-center items-center gap-1 cursor-pointer' onClick={() => signIn("google", { callbackUrl: "/"})}><Image src="/google.png" alt="google" width={30} height={30}></Image>Continue with Google</div>
-          <div className='text-black rounded-full p-2 font-semibold text-md-lg mt-2 border  border-gray-400 gap-1 flex justify-center items-center'><Image src="/apple.png" alt="apple" width={20} height={20}></Image>Continue with Apple</div>
+          <div className='text-black rounded-full p-2 font-semibold text-md-lg mt-2 border  border-gray-400 gap-1 flex justify-center items-center'><Image src="/facebook.png" alt="facebook" width={20} height={20}></Image>Continue with Facebook</div>
           <div className='text-black rounded-full p-2  font-semibold text-md-lg mt-2 border  border-gray-400 flex justify-center items-center gap-1'><Image src="/phone.svg" alt="phone" width={20} height={20}></Image>Continue with phone number</div>
         </div>
         <div className='flex items-center justify-center gap-2 my-8'>

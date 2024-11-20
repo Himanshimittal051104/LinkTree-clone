@@ -3,8 +3,8 @@ import Image from 'next/image'
 const Shopavery = () => {
     return (
         <div className=' relative w-full h-full'>
-            <div className={`bg-customLight font-semibold  rounded-full absolute top-40 left-56 px-4 py-2 ml-2 flex justify-center items-center gap-1`} >
-                <Image src="/linktreeBlack.png" alt="tree" width="20" height="20"></Image>{`linktr.ee/me`}
+            <div className={`bg-customLight font-semibold text-sm rounded-full absolute top-40 left-56 px-2 ml-2 py-2 flex justify-center items-center gap-1`} >
+                <Image src="/linktreeBlack.png" alt="tree" width="15" height="15"></Image>{`linktr.ee/shopavery`}
             </div>
             <div className='absolute left-1/3 top-2 rounded-2xl w-[13vw] h-[15vh] p-3 ' style={{ backgroundImage: `url('/shopReading.jpg')`, backgroundPosition: 'center 30%' }}>
                 <div className='flex'>

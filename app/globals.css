@@ -141,3 +141,17 @@ transition: all 0.5s ease-out;
     transform: translateY(126px);
     transition: all 0.5s ease-out;
   }
+
+.list-group-item-action {
+    background-color: rgb(80, 34, 116);
+    color:#fff; /* Text color when active */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
