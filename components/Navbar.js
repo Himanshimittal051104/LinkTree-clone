@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         {session ?
           (<div className='flex gap-2 justify-center items-center'>
-            <Link href="/Login"><button className='bg-customLight rounded-lg px-7 font-semibold text-lg hover:cursor-pointer py-3'>Admin</button></Link>
+            <Link href="/Admin"><button className='bg-customLight rounded-lg px-7 font-semibold text-lg hover:cursor-pointer py-3'>Admin</button></Link>
             <button className='bg-customDark text-lg text-white font-semibold rounded-full px-7 py-3 hover:cursor-pointer' onClick={() => signOut({ callbackUrl: "/" })}>Sign out</button></div>
           ) :
           (<div className='flex gap-2 justify-center items-center'>

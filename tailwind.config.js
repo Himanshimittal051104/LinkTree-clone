@@ -37,6 +37,7 @@ module.exports = {
         custom2:"#E9C0E9",
         custom3:"#02ACC4",
         custom4:"#D2EA83",
+        customAdmin:"rgb(59 130 246 / .5)"
       },
       rotate: {
         'y-180': 'rotateY(180deg)',

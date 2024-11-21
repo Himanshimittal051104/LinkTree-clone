@@ -18,7 +18,7 @@ const geistMono = localFont({
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const noNavbarRoutes = ["/Login", "/Signup", "/Marketplace"];
+  const noNavbarRoutes = ["/Login", "/Signup", "/Marketplace","/Admin"];
   const backgroundColors = {
     '/': 'bg-bg1',
     '/Instagram': 'bg-bg13',
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       >
         <SessionWrapper>
           <div className={`${pageBgClass}`}>
-            {!noNavbarRoutes.includes(pathname) && <Navbar />}
+            {/* {!noNavbarRoutes.includes(pathname) && <Navbar />} */}
             {children}
           </div>
         </SessionWrapper>

@@ -155,3 +155,7 @@ transition: all 0.5s ease-out;
     padding-left: 3px;
     padding-right: 3px;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }

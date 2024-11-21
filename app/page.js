@@ -16,7 +16,6 @@ import Field from "@/components/Field";
 import SellProducts from "@/components/SellProducts";
 import ShareContent from "@/components/ShareContent";
 import Engage from "@/components/Engage";
-import Testing from "@/components/Testing";
 const graphik = localFont({
   src: "./fonts/GraphikBold.otf",
   variable: "--font-graphik",
@@ -66,7 +65,7 @@ export default function Home() {
       </div>
       <div className="bg-bg12 grid grid-cols-2 px-24 py-20">
         <div>
-        <Image src="/goodCompany.webp" alt="homePage" width={800} height={800} className=""></Image>
+          <Image src="/goodCompany.webp" alt="homePage" width={800} height={800} className=""></Image>
         </div>
         <div className="flex flex-col gap-8 justify-center">
           <p className={`text-bg13 text-6xl font-bold ${graphik.className}`}>Create and customize your Linktree in minutes</p>
@@ -94,7 +93,7 @@ export default function Home() {
             <p className={` text-6xl font-bold ${graphik.className} text-customDark`}>Analyze your audience and keep your followers engaged</p>
             <p className=" font-semibold">Track your engagement over time, monitor revenue and learn what’s converting your audience. Make informed updates on the fly to keep them coming back.</p>
             <Link href="/Signup">
-            <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg">Get started for free</button></Link>
+              <button className="bg-bg12 rounded-full w-[30%] py-3 text-lg">Get started for free</button></Link>
           </div>
         </div>
         <div className="pt-28  text-center px-24">
