@@ -5,6 +5,7 @@ import "./globals.css";
 import { usePathname } from 'next/navigation';
 import Navbar from "@/components/Navbar";
 import SessionWrapper from "@/components/SessionWrapper";
+import { ComponentProvider } from "@/context/Component";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -39,10 +40,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SessionWrapper>
+          <ComponentProvider>
           <div className={`${pageBgClass}`}>
-            {/* {!noNavbarRoutes.includes(pathname) && <Navbar />} */}
+            {!noNavbarRoutes.includes(pathname) && <Navbar />}
             {children}
           </div>
+          </ComponentProvider>
         </SessionWrapper>
       </body>
     </html>

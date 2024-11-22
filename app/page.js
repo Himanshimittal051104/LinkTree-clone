@@ -16,6 +16,10 @@ import Field from "@/components/Field";
 import SellProducts from "@/components/SellProducts";
 import ShareContent from "@/components/ShareContent";
 import Engage from "@/components/Engage";
+import Add from "@/components/Add";
+import Monetize from "@/components/Monetize";
+import Content from "@/components/Content";
+import GrowFollowing from "@/components/GrowFollowing";
 const graphik = localFont({
   src: "./fonts/GraphikBold.otf",
   variable: "--font-graphik",

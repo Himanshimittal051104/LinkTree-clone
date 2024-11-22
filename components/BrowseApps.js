@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Image from 'next/image'
+import Add from './Add'
+import { ComponentContext } from '@/context/Component'
 const BrowseApps = () => {
     const [clicked, setClicked] = useState(false)
     const [inputURL, setInputURL] = useState('')
     const [clickedLink, setClickedLink] = useState(false)
     const [searchedLink, setSearchedLink] = useState(false)
     const [inputLink, setInputLink] = useState('')
+    const {component,setComponent}= useContext(ComponentContext);
     return (
+        <>
         <div className='bg-white rounded-3xl w-[75%] mx-auto p-4' onClick={() => { setClicked(inputURL !== "" ? true : false); setClickedLink(inputLink !== "" ? true : false) }}>
             <div className=''>
                 <div className='font-bold text-xl'>Enter URL or Browse Apps</div>
@@ -107,11 +111,12 @@ const BrowseApps = () => {
                     </div>
                 </div>
             </div>
-            <button className='rounded-full hover:bg-customLight p-2 px-3 text-purple-600 cursor-pointer flex gap-1 items-center font-semibold text-sm mt-24'>
+            <button className='rounded-full hover:bg-customLight p-2 px-3 text-purple-600 cursor-pointer flex gap-1 items-center font-semibold text-sm mt-24' onClick={()=>setComponent(0)}>
                 View all Apps
                 <Image src="/arrowPurple.svg" alt="arrow" width={18} height={18}></Image>
             </button>
         </div>
+        </>
     )
 }
 

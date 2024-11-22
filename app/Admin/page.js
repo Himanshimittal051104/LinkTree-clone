@@ -1,10 +1,17 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Image from 'next/image'
 import BrowseApps from '@/components/BrowseApps'
+import { ComponentContext } from '@/context/Component'
+import Add from '@/components/Add'
+import Monetize from '@/components/Monetize'
+import Content from '@/components/Content'
+import GrowFollowing from '@/components/GrowFollowing'
 const Page = () => {
+    const {component,setComponent}=useContext(ComponentContext);
     return (
-        <div className='flex w-[100vw] h-screen bg-customLight'>
+        <>
+        <div className={`flex w-[100vw] h-screen bg-customLight ${component==-1?"opacity-100":"opacity-90"}`}>
             <div className=' w-[15%] '>
                 <div className=' font-semibold text-gray-700 p-4'>
                     <Image src="/linktreeBlack.png" alt="linktree" width={20} height={20}></Image>
@@ -65,6 +72,11 @@ const Page = () => {
             <hr className='h-full w-[1px] bg-gray-500'></hr>
             <div className=' w-[30%]'></div>
         </div>
+       {component==0 && <div className='absolute top-4 w-full'><Add/></div>}
+       {component==1 && <div className='absolute top-4 w-full'><Content/></div>}
+       {component==2 && <div className='absolute top-4 w-full'><Monetize/></div>}
+       {component==3 && <div className='absolute top-4 w-full'><GrowFollowing/></div>}
+        </>
     )
 }
 

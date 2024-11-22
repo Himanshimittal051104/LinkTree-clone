@@ -320,8 +320,8 @@ const Page = () => {
                             </div>
                         </div>
                         <div className='flex gap-2'>
-                            <div className='rounded-xl w-14 h-14 relative bg-bg11'>
-                                <Image src="/PodcastsM.svg" alt="Podcasts" fill className='rounded-xl p-2.5'></Image>
+                            <div className='rounded-xl w-14 h-14 relative'>
+                                <Image src="/Podcasts.svg" alt="Podcasts" fill className='rounded-xl'></Image>
                             </div>
                             <div>
                                 <div className='text-xl font-bold'>Podcasts</div>
